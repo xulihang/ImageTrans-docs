@@ -7,7 +7,9 @@ PSD相关
 
 ImageTrans支持利用脚本调用Photoshop来实现互操作。
 
-说明：如果是Windows系统并安装了完整版Photoshop，ImageTrans提供exe脚本工具，可以自动打开PS。其它情况需要自行打开PS，选择脚本进行操作。
+说明：如果是Windows系统并安装了完整版Photoshop，ImageTrans提供exe脚本工具，可以自动打开PS。其它情况需要自行打开PS，点击“文件-脚本-浏览”选择脚本进行操作。
+
+Photoshop脚本仓库：`<https://github.com/xulihang/ImageTrans_PhotoshopScripts>`_
 
 PSD转JPG
 +++++++++++++
