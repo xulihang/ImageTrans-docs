@@ -4,7 +4,7 @@
 软件安装
 -----------
 
-根据对应系统选择并下载ImageTrans的压缩包，解压到任意目录即可。
+下载ImageTrans的压缩包，解压到任意目录，双击ImageTrans.jar即可运行。
 
 软件依赖JRE 1.8运行环境，请先下载安装：`百度网盘（提取码：mhsy） <https://pan.baidu.com/s/1t0g6htstFge0h2dOS0aBog>`_
 
@@ -12,7 +12,7 @@
 
 需要使用Tesseract进行OCR的话请自行下载安装。这里提供一个Windows的绿色版本：`百度网盘（提取码：ktpt） <https://pan.baidu.com/s/1gJZyuntLetZEpFWI8XqkXA>`_，下载后将tesseract-ocr目录和ImageTrans放在一起。额外的语言包请放在tesseract-ocr\tessdata目录下。
 
-本工具支持的在线OCR和机器翻译服务均需要设置API才能使用。
+本工具支持的在线OCR和机器翻译服务均需要设置API才能使用，其中云译和ocrspace为免费提供。
 
 
 新建项目
