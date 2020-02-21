@@ -8,7 +8,7 @@
 
 软件依赖JRE 1.8运行环境，请先下载安装：`百度网盘（提取码：mhsy） <https://pan.baidu.com/s/1t0g6htstFge0h2dOS0aBog>`_
 
-软件依赖OpenCV，请根据系统下载运行库文件，放在ImageTrans的目录下：`百度网盘 <https://pan.baidu.com/s/1D9EZMKqwgqQjdEjwYFkZQQ>`_
+软件依赖OpenCV，请根据系统下载运行库文件，解压后放在ImageTrans的目录下：`百度网盘 <https://pan.baidu.com/s/1D9EZMKqwgqQjdEjwYFkZQQ>`_
 
 需要使用Tesseract进行OCR的话请自行下载安装。这里提供一个Windows的绿色版本：`百度网盘（提取码：ktpt） <https://pan.baidu.com/s/1gJZyuntLetZEpFWI8XqkXA>`_，下载后将tesseract-ocr目录和ImageTrans放在一起。额外的语言包请放在 ``tesseract-ocr\tessdata`` 目录下。
 
