@@ -9,5 +9,6 @@ ImageTrans 使用手册
    gettingstarted.rst
    textarea_detection_and_text_reinjection.rst
    interoperation.rst
+   text_translation.rst
    settings.rst
 
