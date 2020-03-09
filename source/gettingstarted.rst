@@ -14,6 +14,17 @@
 
 本工具支持的在线OCR和机器翻译服务均需要设置API才能使用，其中云译和ocrspace为免费提供。
 
+验证登录
+------------
+
+每次运行ImageTrans时，会显示验证器，需要填入购买时填写的email和订单号。订单号可以在收到的邮件中找到。
+
+.. image:: /images/validator.jpg
+
+一个email可以在三台设备上使用，要更换设备则需要使用邮箱进行重置。
+
+.. image:: /images/reset_macs.jpg
+
 
 新建项目
 -----------
