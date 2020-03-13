@@ -4,15 +4,20 @@
 软件安装
 -----------
 
-下载ImageTrans的压缩包，解压到任意目录，双击ImageTrans.jar即可运行。
+Windows完整版解压到任意目录后即可，Mac完整版打开dmg文件安装ImageTrans到应用目录即可。
+
+需要使用Tesseract进行OCR的话请自行下载安装。这里提供一个Windows的绿色版本：`百度网盘（提取码：ktpt） <https://pan.baidu.com/s/1gJZyuntLetZEpFWI8XqkXA>`_，下载后将tesseract-ocr目录和ImageTrans放在一起。额外的语言包请放在 ``tesseract-ocr\tessdata`` 目录下。
+
+本工具支持的在线OCR和机器翻译服务均需要设置API才能使用，其中云译和ocrspace为免费提供。付费用户还能获得百度和Azure的API。
+
+以下内容是对于跨平台的版本：
+
+下载ImageTrans的压缩包，解压到任意目录，双击ImageTrans.jar或者命令行输入 ``java -jar ImageTrans.jar`` 即可运行。
 
 软件依赖JRE 1.8运行环境，请先下载安装：`百度网盘（提取码：mhsy） <https://pan.baidu.com/s/1t0g6htstFge0h2dOS0aBog>`_
 
 软件依赖OpenCV，请根据系统下载运行库文件，解压后放在ImageTrans的目录下：`百度网盘 <https://pan.baidu.com/s/1D9EZMKqwgqQjdEjwYFkZQQ>`_, `GitHub <https://github.com/xulihang/ImageTrans-docs/releases/tag/opencv>`_ 
 
-需要使用Tesseract进行OCR的话请自行下载安装。这里提供一个Windows的绿色版本：`百度网盘（提取码：ktpt） <https://pan.baidu.com/s/1gJZyuntLetZEpFWI8XqkXA>`_，下载后将tesseract-ocr目录和ImageTrans放在一起。额外的语言包请放在 ``tesseract-ocr\tessdata`` 目录下。
-
-本工具支持的在线OCR和机器翻译服务均需要设置API才能使用，其中云译和ocrspace为免费提供。
 
 验证登录
 ------------
