@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Xu Lihang
+# This file is distributed under the same license as the ImageTrans
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ImageTrans Documentation 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-12 21:07+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../source/interoperation.rst:3
+msgid "与第三方软件的交互"
+msgstr ""
+
+#: ../../source/interoperation.rst:6
+msgid "PSD相关"
+msgstr ""
+
+#: ../../source/interoperation.rst:8
+msgid "ImageTrans支持利用脚本调用Photoshop来实现互操作。"
+msgstr ""
+
+#: ../../source/interoperation.rst:10
+msgid "说明：如果是Windows系统并安装了完整版Photoshop，ImageTrans提供exe脚本工具，可以自动打开PS。其它情况需要自行打开PS，点击“文件-脚本-浏览”选择脚本进行操作。"
+msgstr ""
+
+#: ../../source/interoperation.rst:12
+msgid "Photoshop脚本仓库：`<https://github.com/xulihang/ImageTrans_PhotoshopScripts>`_"
+msgstr ""
+
+#: ../../source/interoperation.rst:15
+msgid "PSD转JPG"
+msgstr ""
+
+#: ../../source/interoperation.rst:17
+msgid "软件不能直接显示PSD，需要先将PSD转换为JPG。"
+msgstr ""
+
+#: ../../source/interoperation.rst:19
+msgid "通过菜单-工具-PSD转JPG打开转换工具，调用Photoshop批量进行转换。"
+msgstr ""
+
+#: ../../source/interoperation.rst:21
+msgid "非Windows则使用提供的JSX脚本：pdf2jpg.jsx，选择需要进行转换的目录进行转换。"
+msgstr ""
+
+#: ../../source/interoperation.rst:24
+msgid "从PSD读取文字区域"
+msgstr ""
+
+#: ../../source/interoperation.rst:26
+msgid "如果处理的是PSD文件，可以从PSD文件读取其中的文字图层的坐标、大小和文本，显示在ImageTrans中，并且回填时会自动替换文本，不用生成覆盖层。点击菜单-编辑-从PSD读取文字图层（若存在）进行操作。"
+msgstr ""
+
+#: ../../source/interoperation.rst:28
+msgid "非Windows则使用提供的JSX脚本：readTextLayers.jsx，选择目录进行导出，之后点击菜单-项目-导入用PS脚本导出的文字区域信息进行导入。"
+msgstr ""
+
+#: ../../source/interoperation.rst:31
+msgid "读取字体名称"
+msgstr ""
+
+#: ../../source/interoperation.rst:33
+msgid "在字体设置时需要填写PS专用格式的字体名称，可以使用readFont.jsx进行读取。该脚本会读取第一个文本框的字体信息。"
+msgstr ""
+
+#: ../../source/interoperation.rst:36
+msgid "生成PSD"
+msgstr ""
+
+#: ../../source/interoperation.rst:38
+msgid "图片翻译完成后，可以生成PSD文件供精细调整。点击菜单-生成可编辑的PSD文件调出生成选项对话框。"
+msgstr ""
+
+#: ../../source/interoperation.rst:40
+msgid "以下是选项的说明："
+msgstr ""
+
+#: ../../source/interoperation.rst:42
+msgid "存在PSD - 直接操作原来的PSD文件，PSD文件需要和JPG文件存放在一起。不选则会从JPG文件生成PSD。"
+msgstr ""
+
+#: ../../source/interoperation.rst:43
+msgid "使用译文替换 - 不选则使用原来的文本。"
+msgstr ""
+
+#: ../../source/interoperation.rst:44
+msgid "添加覆盖层 - 添加覆盖层以遮住原来的文字。如果对应PSD中的文字图层，则不会添加覆盖层。"
+msgstr ""
+
+#: ../../source/interoperation.rst:45
+msgid "使用精确模式 - 非精确模式下覆盖层是一个矩形框，精确模式下软件会根据背景信息精确生成覆盖层，但会耗费较长时间。"
+msgstr ""
+
+#: ../../source/interoperation.rst:46
+msgid "水平翻转图像 - 适用于中文漫画翻译为日语漫画的情况"
+msgstr ""
+
+#: ../../source/interoperation.rst:47
+msgid "使用点文字 - 所有文本框都设置为点文本，适用于不需要自动换行和文字超出文本框范围的情况"
+msgstr ""
+
+#: ../../source/interoperation.rst:48
+msgid "仅导出 - 仅导出数据文件，暂不执行生成操作"
+msgstr ""
+
+#: ../../source/interoperation.rst:52
+msgid "生成完成后会跳出提示窗口，请耐心等待。期间可以切换到PS的窗口查看正在进行的操作，如果PS提出相关操作，需要人工处理。"
+msgstr ""
+
+#: ../../source/interoperation.rst:54
+msgid "非Windows请使用脚本：addLayers.jsx。"
+msgstr ""
+
+#: ../../source/interoperation.rst:57
+msgid "其它"
+msgstr ""
+
+#: ../../source/interoperation.rst:59
+msgid "使用文件-导出功能可以将文字导出为docx文档供翻译，并支持导回操作。"
+msgstr ""
+
+#: ../../source/interoperation.rst:61
+msgid "另外，本工具的项目文件以json格式存储，会编程的朋友可以自由进行处理。"
+msgstr ""
+

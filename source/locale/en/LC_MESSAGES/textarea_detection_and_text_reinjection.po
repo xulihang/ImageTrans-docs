@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Xu Lihang
+# This file is distributed under the same license as the ImageTrans
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ImageTrans Documentation 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-12 21:07+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:2
+msgid "文字区域检测和译文回填"
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:4
+msgid "ImageTrans实现了一套文字区域检测和译文回填方法。"
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:7
+msgid "文字区域检测"
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:9
+msgid "点击编辑-自动定位文字（启发式），将获得所有候选文字区域"
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:10
+msgid "点击编辑-文字区域操作-获取文字区域置信度，文字区域可能性较低的区域的文本框颜色将变为黄色。这类区域可以自行去除或者隐藏，但因为有些区域被误识别为非文字区域，去除的话翻译时还要手动框选，建议不要直接去除。"
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:11
+msgid "选择文字区域进行OCR和翻译，操作结束后，可以点击编辑-文字区域操作去除没有原文或者没有译文的区域。"
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:15
+msgid "OCR等操作会自动略过文字区域可能性较低的区域。"
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:17
+msgid "因为不同的漫画尺寸不同，需要设置不同的文字区域检测参数，可以在项目-设置-文字区域检测里进行设置。"
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:19
+msgid ""
+"文字区域检测的算法细节见此：`基于规则的漫画文字检测方法 <http://blog.xulihang.me/text-localization-"
+"for-comics/>`_"
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:21
+msgid ""
+"文字区域置信度获取是利用Tensorflow提供的脚本基于卷积神经网络预训练模型重新训练的，相关代码见此： "
+"`<https://github.com/xulihang/text-image-classifier>`_。"
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:23
+msgid "文字区域检测的操作本工具提供手动分步操作功能，操作方式是菜单栏-编辑-文字区域操作以及右侧编辑区的合并上下区域和合并左右区域按钮。"
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:27
+msgid "译文回填"
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:29
+msgid "译文回填分为两步，一步是原文抹除，一步是译文的放置。"
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:32
+msgid "原文抹除"
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:34
+msgid "原文抹除有两种模式，一种是精确模式，一种是非精确模式。"
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:36
+msgid ""
+"精确模式下，会先生成文字掩膜，再根据掩膜进行图像修复。如果掩膜生成不正确，可以使用编辑-生成/编辑掩膜进行修改，掩膜图像会保存在图片目录，带有mask后缀"
+"，而去除文字的图像则带有text-"
+"removed后缀。如果掩膜没有手动生成，每次预览时会自动生成，会耗费时间进行计算。需要注意的一点是浅色字体区域，需要先设置背景颜色和文字颜色，程序判断文字颜色比背景颜色浅时会对图像颜色做反转，这样文字掩膜才能够生成。"
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:38
+msgid "非精确模式下，则会使用背景颜色生成一个文本框进行遮盖。这一模式较适合背景单一的数字图像。"
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:40
+msgid "下图是掩膜编辑器："
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:45
+msgid "译文放置"
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:47
+msgid "根据文本框的大小和位置放置译文，支持自动根据文本框的大小调整译文大小，可以在项目设置里进行设置。"
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:51
+msgid "颜色检测"
+msgstr ""
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:53
+msgid "本工具能较粗略地自动检测背景颜色和文字颜色，点击编辑-颜色操作进行相关操作。"
+msgstr ""
+

@@ -24,12 +24,15 @@
 
 请运行以下仓库的代码： `<https://github.com/xulihang/text-image-classifier>`_。
 
-EAST自然场景文字检测
+自然场景文字检测
 +++++++++++++++++++++++
+
+支持使用EAST和CRAFT自然场景文字检测方法进行文字检测。
 
 默认地址为：`<http://127.0.0.1:8080/detect>`_
 
-请运行以下仓库的代码： `<https://github.com/xulihang/EAST>`_。
+代码地址： `<https://github.com/xulihang/ImageTrans_SceneText_Detection>`_。
+
 
 API设置
 -----------

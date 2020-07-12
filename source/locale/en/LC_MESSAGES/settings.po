@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Xu Lihang
+# This file is distributed under the same license as the ImageTrans
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ImageTrans Documentation 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-12 21:07+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../source/settings.rst:2
+msgid "软件设置"
+msgstr ""
+
+#: ../../source/settings.rst:5
+msgid "通用设置"
+msgstr ""
+
+#: ../../source/settings.rst:8
+msgid "气泡检测"
+msgstr ""
+
+#: ../../source/settings.rst:10
+msgid "本工具的气泡检测使用百度EasyDL和Azure的目标检测服务。需要自行开通账号并训练。"
+msgstr ""
+
+#: ../../source/settings.rst:12
+msgid "推荐的标注方法："
+msgstr ""
+
+#: ../../source/settings.rst:14
+msgid "选中所有气泡中的文字，选框尽量贴合文字。"
+msgstr ""
+
+#: ../../source/settings.rst:18
+msgid "发布模型后，在菜单-文件-偏好设置-通用里设置发布了URL，同时还需要填写对应的API。"
+msgstr ""
+
+#: ../../source/settings.rst:21
+msgid "文字图像识别"
+msgstr ""
+
+#: ../../source/settings.rst:23
+msgid "默认地址为：`<http://127.0.0.1:8082/classify>`_"
+msgstr ""
+
+#: ../../source/settings.rst:25
+msgid "请运行以下仓库的代码： `<https://github.com/xulihang/text-image-classifier>`_。"
+msgstr ""
+
+#: ../../source/settings.rst:28
+msgid "自然场景文字检测"
+msgstr ""
+
+#: ../../source/settings.rst:30
+msgid "支持使用EAST和CRAFT自然场景文字检测方法进行文字检测。"
+msgstr ""
+
+#: ../../source/settings.rst:32
+msgid "默认地址为：`<http://127.0.0.1:8080/detect>`_"
+msgstr ""
+
+#: ../../source/settings.rst:34
+msgid "代码地址： `<https://github.com/xulihang/ImageTrans_SceneText_Detection>`_。"
+msgstr ""
+
+#: ../../source/settings.rst:38
+msgid "API设置"
+msgstr ""
+
+#: ../../source/settings.rst:40
+msgid "点击菜单-文件-偏好设置-API，可以设置百度、有道、微软、腾讯等OCR和机器翻译服务提供商的API。"
+msgstr ""
+

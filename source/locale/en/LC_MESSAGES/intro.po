@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Xu Lihang
+# This file is distributed under the same license as the ImageTrans
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ImageTrans Documentation 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-12 21:07+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../source/intro.rst:2
+msgid "简介"
+msgstr ""
+
+#: ../../source/intro.rst:4
+msgid "ImageTrans是一款图片文字转录、图片翻译软件。ImageTrans不同于谷歌的图片自动翻译，它提供人工精调功能，是一款以人为本的辅助工具。"
+msgstr ""
+
+#: ../../source/intro.rst:6
+msgid "功能："
+msgstr ""
+
+#: ../../source/intro.rst:8
+msgid "自动或者辅助用户框选文字区域，调用多种OCR引擎进行文字识别"
+msgstr ""
+
+#: ../../source/intro.rst:9
+msgid "对文字区域排序，并将文字导出为xlsx、docx等多种格式文件"
+msgstr ""
+
+#: ../../source/intro.rst:10
+msgid "调用机器翻译对识别的文字做预翻译"
+msgstr ""
+
+#: ../../source/intro.rst:11
+msgid "调用Photoshop读取PSD文件、导出可编辑的译文PSD文件"
+msgstr ""
+
+#: ../../source/intro.rst:12
+msgid "设置字体样式"
+msgstr ""
+
+#: ../../source/intro.rst:13
+msgid "针对漫画翻译设计的文字区域检测和文字抹除功能"
+msgstr ""
+
