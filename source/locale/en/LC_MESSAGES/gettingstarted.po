@@ -172,7 +172,7 @@ msgstr "Select the language and OCR engine (only Baidu and Azure support this), 
 
 #: ../../source/gettingstarted.rst:89
 msgid "另提供较为复杂的启发式和自然场景文字检测方法，详见 :ref:`text-detection`"
-msgstr "Heuristic and natural scene text detection methods are also provided, which are more complex. See :ref: `text-detection`"
+msgstr "Heuristic and natural scene text detection methods are also provided, which are more complex. See :ref:`text-detection`"
 
 
 #: ../../source/gettingstarted.rst:92
