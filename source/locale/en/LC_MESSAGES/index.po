@@ -20,9 +20,11 @@ msgstr ""
 
 #: ../../source/index.rst:2
 msgid "ImageTrans 使用手册"
-msgstr ""
+msgstr "ImageTrans Documentation"
+
 
 #: ../../source/index.rst:4
 msgid "目录"
-msgstr ""
+msgstr "Contents"
+
 

@@ -20,117 +20,146 @@ msgstr ""
 
 #: ../../source/interoperation.rst:3
 msgid "与第三方软件的交互"
-msgstr ""
+msgstr "Interaction with Third-Party Software"
+
 
 #: ../../source/interoperation.rst:6
 msgid "PSD相关"
-msgstr ""
+msgstr "PSD-related"
+
 
 #: ../../source/interoperation.rst:8
 msgid "ImageTrans支持利用脚本调用Photoshop来实现互操作。"
-msgstr ""
+msgstr "ImageTrans can intereact with Photoshop using scripts."
+
 
 #: ../../source/interoperation.rst:10
 msgid "说明：如果是Windows系统并安装了完整版Photoshop，ImageTrans提供exe脚本工具，可以自动打开PS。其它情况需要自行打开PS，点击“文件-脚本-浏览”选择脚本进行操作。"
-msgstr ""
+msgstr "Note: If you are on a Windows system and have a full version of Photoshop installed, ImageTrans provides exe scripting tools that automatically open PS. In other cases, you need to open the PS yourself and click File->Script->Browse to run the scripts."
+
 
 #: ../../source/interoperation.rst:12
 msgid "Photoshop脚本仓库：`<https://github.com/xulihang/ImageTrans_PhotoshopScripts>`_"
-msgstr ""
+msgstr "Photoshop Script Repository: `<https://github.com/xulihang/ImageTrans_PhotoshopScripts>`_"
+
 
 #: ../../source/interoperation.rst:15
 msgid "PSD转JPG"
-msgstr ""
+msgstr "PSD to JPG"
+
 
 #: ../../source/interoperation.rst:17
 msgid "软件不能直接显示PSD，需要先将PSD转换为JPG。"
-msgstr ""
+msgstr "The software does not support PSD files directly. You need to convert PSDs to JPGs first."
+
 
 #: ../../source/interoperation.rst:19
 msgid "通过菜单-工具-PSD转JPG打开转换工具，调用Photoshop批量进行转换。"
-msgstr ""
+msgstr "Open the conversion tool via Tools->PSD to JPG. It will call Photoshop to do the bulk conversion."
+
 
 #: ../../source/interoperation.rst:21
 msgid "非Windows则使用提供的JSX脚本：pdf2jpg.jsx，选择需要进行转换的目录进行转换。"
-msgstr ""
+msgstr "Non-Windows systems have to use the provided JSX script: pdf2jpg.jsx. Select the directory that needs to be converted."
+
 
 #: ../../source/interoperation.rst:24
 msgid "从PSD读取文字区域"
-msgstr ""
+msgstr "Read Text Areas from PSDs"
+
 
 #: ../../source/interoperation.rst:26
 msgid "如果处理的是PSD文件，可以从PSD文件读取其中的文字图层的坐标、大小和文本，显示在ImageTrans中，并且回填时会自动替换文本，不用生成覆盖层。点击菜单-编辑-从PSD读取文字图层（若存在）进行操作。"
-msgstr ""
+msgstr "If you are working on a PSD file, you can read the coordinates, size, and text of text layers in the PSD file, display it in ImageTrans, and automatically replace the text with translation without generating an overlay layer. Click the Edit->Read text layers from PSD files, if present."
+
 
 #: ../../source/interoperation.rst:28
 msgid "非Windows则使用提供的JSX脚本：readTextLayers.jsx，选择目录进行导出，之后点击菜单-项目-导入用PS脚本导出的文字区域信息进行导入。"
-msgstr ""
+msgstr "Non-Windows systems have to use the provided JSX script: readTextLayers.jsx. Select the folder to export, and then click Project->Import text areas exported with PS scripts to import."
+
 
 #: ../../source/interoperation.rst:31
 msgid "读取字体名称"
-msgstr ""
+msgstr "Read Font Name"
+
 
 #: ../../source/interoperation.rst:33
 msgid "在字体设置时需要填写PS专用格式的字体名称，可以使用readFont.jsx进行读取。该脚本会读取第一个文本框的字体信息。"
-msgstr ""
+msgstr "The font name is in a PS-specific format, which can be obtained using readFont.jsx. The script reads the font information of the first text box."
+
 
 #: ../../source/interoperation.rst:36
 msgid "生成PSD"
-msgstr ""
+msgstr "Generating PSD"
+
 
 #: ../../source/interoperation.rst:38
 msgid "图片翻译完成后，可以生成PSD文件供精细调整。点击菜单-生成可编辑的PSD文件调出生成选项对话框。"
-msgstr ""
+msgstr "After the translation is completed, you can generate a PSD file for further adjustment in PS. Click File-Generate editable PSD files to bring up the generating options dialog box."
+
 
 #: ../../source/interoperation.rst:40
 msgid "以下是选项的说明："
-msgstr ""
+msgstr "Here's a description of the options:"
+
 
 #: ../../source/interoperation.rst:42
 msgid "存在PSD - 直接操作原来的PSD文件，PSD文件需要和JPG文件存放在一起。不选则会从JPG文件生成PSD。"
-msgstr ""
+msgstr "PSD exists - directly process the original PSD file. PSD files have to be put together with the JPG files. If it is not checked, new PSD files will be generated based on the JPG files."
+
 
 #: ../../source/interoperation.rst:43
 msgid "使用译文替换 - 不选则使用原来的文本。"
-msgstr ""
+msgstr "Replace with translation - Otherwise the source text will be used."
+
 
 #: ../../source/interoperation.rst:44
 msgid "添加覆盖层 - 添加覆盖层以遮住原来的文字。如果对应PSD中的文字图层，则不会添加覆盖层。"
-msgstr ""
+msgstr "Add overlay mask - Add overlays to cover the source text. If the text area corresponds to a text layer in the PSD, no overlay will be added."
+
 
 #: ../../source/interoperation.rst:45
 msgid "使用精确模式 - 非精确模式下覆盖层是一个矩形框，精确模式下软件会根据背景信息精确生成覆盖层，但会耗费较长时间。"
-msgstr ""
+msgstr "Use Precision Mode - The overlay in imprecision mode is a rectangular box. In precision mode, the software will accurately remove text."
+
 
 #: ../../source/interoperation.rst:46
 msgid "水平翻转图像 - 适用于中文漫画翻译为日语漫画的情况"
-msgstr ""
+msgstr "Flip image horizontally - for Chinese Comics Translated into Japanese Comics"
+
 
 #: ../../source/interoperation.rst:47
 msgid "使用点文字 - 所有文本框都设置为点文本，适用于不需要自动换行和文字超出文本框范围的情况"
-msgstr ""
+msgstr "Use point text - All text boxes will use point text."
+
 
 #: ../../source/interoperation.rst:48
 msgid "仅导出 - 仅导出数据文件，暂不执行生成操作"
-msgstr ""
+msgstr "Export only - Export data files only. Do not run Photoshop."
+
 
 #: ../../source/interoperation.rst:52
 msgid "生成完成后会跳出提示窗口，请耐心等待。期间可以切换到PS的窗口查看正在进行的操作，如果PS提出相关操作，需要人工处理。"
-msgstr ""
+msgstr "Please patiently wait until the prompt window pops up indicating the operation is done. During the operation you can switch to the window of PS to view the operation in progress. If PS displays relevant dialogs, you need to handle them manually."
+
 
 #: ../../source/interoperation.rst:54
 msgid "非Windows请使用脚本：addLayers.jsx。"
-msgstr ""
+msgstr "Non-Windows systems have to use this script: addLayers.jsx."
+
 
 #: ../../source/interoperation.rst:57
 msgid "其它"
-msgstr ""
+msgstr "Others"
+
 
 #: ../../source/interoperation.rst:59
 msgid "使用文件-导出功能可以将文字导出为docx文档供翻译，并支持导回操作。"
-msgstr ""
+msgstr "Use File->Export to export text as a docx document for others to translate. ImageTrans can reimport the translation."
+
 
 #: ../../source/interoperation.rst:61
 msgid "另外，本工具的项目文件以json格式存储，会编程的朋友可以自由进行处理。"
-msgstr ""
+msgstr "In addition, the tool's project files are stored in json format and you can write your own programs to handle them."
+
 

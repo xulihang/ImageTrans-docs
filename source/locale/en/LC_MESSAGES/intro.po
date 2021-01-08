@@ -20,37 +20,46 @@ msgstr ""
 
 #: ../../source/intro.rst:2
 msgid "简介"
-msgstr ""
+msgstr "Introduction"
+
 
 #: ../../source/intro.rst:4
 msgid "ImageTrans是一款图片文字转录、图片翻译软件。ImageTrans不同于谷歌的图片自动翻译，它提供人工精调功能，是一款以人为本的辅助工具。"
-msgstr ""
+msgstr "ImageTrans is an image transcription and translation tool. Unlike Google's automatic image translation, it allows users to finely control the translation process."
+
 
 #: ../../source/intro.rst:6
 msgid "功能："
-msgstr ""
+msgstr "Features:"
+
 
 #: ../../source/intro.rst:8
 msgid "自动或者辅助用户框选文字区域，调用多种OCR引擎进行文字识别"
-msgstr ""
+msgstr "Text areas detection (automatic and manual). Supports multiple OCR engines."
+
 
 #: ../../source/intro.rst:9
 msgid "对文字区域排序，并将文字导出为xlsx、docx等多种格式文件"
-msgstr ""
+msgstr "Sort text areas and export the text as xlsx, docx, and other format files"
+
 
 #: ../../source/intro.rst:10
 msgid "调用机器翻译对识别的文字做预翻译"
-msgstr ""
+msgstr "Use machine translation to pre-translate source text"
+
 
 #: ../../source/intro.rst:11
 msgid "调用Photoshop读取PSD文件、导出可编辑的译文PSD文件"
-msgstr ""
+msgstr "Call Photoshop to read PSD files and generate editable translated PSD files"
+
 
 #: ../../source/intro.rst:12
 msgid "设置字体样式"
-msgstr ""
+msgstr "Text Styling"
+
 
 #: ../../source/intro.rst:13
 msgid "针对漫画翻译设计的文字区域检测和文字抹除功能"
-msgstr ""
+msgstr "Text area detection and text erasing designed for comic translation"
+
 

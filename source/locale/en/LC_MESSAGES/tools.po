@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Xu Lihang
+# This file is distributed under the same license as the ImageTrans
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ImageTrans Documentation 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-08 19:03+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../source/tools.rst:2
+msgid "工具"
+msgstr "Tools"
+
+
+#: ../../source/tools.rst:4
+msgid "ImageTrans还附带了一系列工具。"
+msgstr "ImageTrans also comes with a range of tools."
+
+
+#: ../../source/tools.rst:7
+msgid "屏幕阅读器"
+msgstr "Screen Reader"
+
+
+#: ../../source/tools.rst:9
+msgid "截取屏幕并OCR和翻译，所得的结果可以保存到项目中。"
+msgstr "Make screen captures, OCR and translate. Results can be saved to the project."
+
+
+#: ../../source/tools.rst:14
+msgid "静默翻译器"
+msgstr "Silent Translator"
+
+
+#: ../../source/tools.rst:16
+msgid "可以以静默方式批量翻译图片，并支持终端调用。"
+msgstr "The pictures can be translated in batch silently. It can be used as in command line."
+
+
+#: ../../source/tools.rst:18
+msgid "终端调用方式："
+msgstr "How:"
+
+
+#: ../../source/tools.rst:20
+msgid ""
+"``java -jar ImageTrans.jar configPath usePrevious detectOnly outdir "
+"fileListPath``"
+msgstr "``java -jar ImageTrans.jar configPath usePrevious detectOnly outdir fileListPath``"
+
+
+#: ../../source/tools.rst:22
+msgid "参数说明："
+msgstr "Parameters:"
+
+
+#: ../../source/tools.rst:24
+msgid "configPath：运行参数文件路径，内容为静默翻译器右侧显示的参数"
+msgstr "configPath: the path of the parameter file. If you open Silent Translator you can see the parameters on the right side."
+
+
+#: ../../source/tools.rst:26
+msgid "usePrevious：是否使用之前的数据，可选值为true和false"
+msgstr "usePrevious: whether to use the previous data. The optional values are true and false"
+
+
+#: ../../source/tools.rst:28
+msgid "detectOnly：是否仅检测文字区域，可选值为true和false"
+msgstr "detectOnly: whether to detect only text areas. The optional values are true and false"
+
+
+#: ../../source/tools.rst:30
+msgid "outdir：输出文件夹"
+msgstr "outdir: output folder"
+
+
+#: ../../source/tools.rst:32
+msgid "fileListPath：待处理文件的列表，用换行分隔"
+msgstr "filelistPath: a list of files to be processed, separated by newlines"
+
+
+#: ../../source/tools.rst:34
+msgid ""
+"可以搭配 `ImageTrans_Server <https://github.com/xulihang/ImageTrans_Server>`_"
+" 提供在线服务"
+msgstr "It can be used with `ImageTrans_Server <https://github.com/xulihang/ImageTrans_Server>` to provide an online service"
+
+
+#: ../../source/tools.rst:38
+msgid "服务器"
+msgstr "Server"
+
+
+#: ../../source/tools.rst:40
+msgid "该工具可以允许其它软件调用ImageTrans翻译图片。"
+msgstr "This tool allows other software to call ImageTrans to translate images."
+
+
+#: ../../source/tools.rst:42
+msgid ""
+"`ImageTrans Chrome插件 "
+"<https://github.com/xulihang/ImageTrans_chrome_extension>`_ 需要使用这一功能。"
+msgstr "`ImageTrans Chrome Extension <https://github.com/xulihang/ImageTrans_chrome_extension>`_ relies on this tool."
+
+
+#: ../../source/tools.rst:44
+msgid "该插件能用ImageTrans翻译网页中的图片，图片和处理结果会自动添加到ImageTrans当前的项目中。"
+msgstr "The extension can use ImageTrans to translate images on webpages Images and processing results will be automatically added to the current project of ImageTrans."
+
+

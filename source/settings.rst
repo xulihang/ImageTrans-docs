@@ -41,5 +41,18 @@ API设置
 
 .. image:: /images/api_setting.jpg
 
+下面是需要设置API密钥的服务的列表。
 
+OCR:
+
+* `Google <https://cloud.google.com/vision/docs/ocr>`_
+* `搜狗 <https://deepi.sogou.com/>`_
+* `百度 <https://cloud.baidu.com/product/ocr_general>`_
+* `腾讯 <https://cloud.tencent.com/product/generalocr>`_
+* `有道 <http://ai.youdao.com/product-ocr-print.s>`_
+* `OCRSPACE <https://ocr.space/OCRAPI>`_
+* `微软Azure <https://azure.microsoft.com/zh-cn/services/cognitive-services/computer-vision/>`_
+
+
+机器翻译见BasicCAT的\ `文档 <https://docs.basiccat.org/en/latest/advancedFeatures.html#id2>`_。
 
