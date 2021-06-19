@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ImageTrans Documentation 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-08 19:03+0800\n"
+"POT-Creation-Date: 2021-06-19 20:37+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgstr "Balloon Detection"
 
 #: ../../source/settings.rst:10
 msgid "本工具的气泡检测使用百度EasyDL和Azure的目标检测服务。需要自行开通账号并训练。"
-msgstr "The tool's balloon detection uses object detection services provided by Baidu EasyDL and Azure. You need to create your own account and train your own model."
+msgstr "The tool's balloon (bubble) detection uses object detection services provided by Baidu EasyDL and Azure. You need to create your own account and train your own model."
 
 
 #: ../../source/settings.rst:12
@@ -53,102 +53,132 @@ msgid "发布模型后，在菜单-文件-偏好设置-通用里设置发布了U
 msgstr "After the model is published, you can set the URL through File-Preferences-General setting. The corresponding API key is also required."
 
 
-#: ../../source/settings.rst:21
+#: ../../source/settings.rst:20
+msgid "此外也支持调用基于Darknet Yolo或者TensorFlow Object Detection API训练的离线气泡检测模型。"
+msgstr "It also supports calling the offline bubble detection model trained by Darknet Yolo or TensorFlow Object Detection API."
+
+
+#: ../../source/settings.rst:23
 msgid "文字图像识别"
 msgstr "Text Image Recognition"
 
 
-#: ../../source/settings.rst:23
+#: ../../source/settings.rst:25
+msgid "软件默认调用本地模型识别文字和非文字区域。此外也可以调用API服务。"
+msgstr "By default, the software uses the local model to recognize text and non text areas. You can also call an API service."
+
+
+#: ../../source/settings.rst:27
 msgid "默认地址为：`<http://127.0.0.1:8082/classify>`_"
 msgstr "The default address is: `<http://127.0.0.1:8082/classify>`_"
 
 
-#: ../../source/settings.rst:25
+#: ../../source/settings.rst:29
 msgid "请运行以下仓库的代码： `<https://github.com/xulihang/text-image-classifier>`_。"
 msgstr "Please run the code in this repository:  `<https://github.com/xulihang/text-image-classifier>`_."
 
 
-#: ../../source/settings.rst:28
+#: ../../source/settings.rst:32
 msgid "自然场景文字检测"
 msgstr "Natural Scene Text Detection"
 
 
-#: ../../source/settings.rst:30
+#: ../../source/settings.rst:34
 msgid "支持使用EAST和CRAFT自然场景文字检测方法进行文字检测。"
 msgstr "EAST and CRAFT natural scene text detection methods are supported."
 
 
-#: ../../source/settings.rst:32
+#: ../../source/settings.rst:36
 msgid "默认地址为：`<http://127.0.0.1:8080/detect>`_"
 msgstr "The default address is: `<http://127.0.0.1:8080/detect>`_"
 
 
-#: ../../source/settings.rst:34
+#: ../../source/settings.rst:38
 msgid "代码地址： `<https://github.com/xulihang/ImageTrans_SceneText_Detection>`_。"
 msgstr "Code repository: `<https://github.com/xulihang/ImageTrans_SceneText_Detection>`_."
 
 
-#: ../../source/settings.rst:38
+#: ../../source/settings.rst:42
 msgid "API设置"
 msgstr "API Settings"
 
 
-#: ../../source/settings.rst:40
+#: ../../source/settings.rst:44
 msgid "点击菜单-文件-偏好设置-API，可以设置百度、有道、微软、腾讯等OCR和机器翻译服务提供商的API。"
 msgstr "Click File->Preferences->API to set up APIs for OCR and machine translation services provided by Baidu, Youdao, Microsoft, Tencent, etc."
 
 
-#: ../../source/settings.rst:44
+#: ../../source/settings.rst:48
 msgid "下面是需要设置API密钥的服务的列表。"
 msgstr "The following is a list of services that need to set the API key."
 
 
-#: ../../source/settings.rst:46
+#: ../../source/settings.rst:50
 msgid "OCR:"
 msgstr "OCR:"
 
 
-#: ../../source/settings.rst:48
+#: ../../source/settings.rst:52
 msgid "`Google <https://cloud.google.com/vision/docs/ocr>`_"
 msgstr "`Google <https://cloud.google.com/vision/docs/ocr>`_"
 
 
-#: ../../source/settings.rst:49
+#: ../../source/settings.rst:53
 msgid "`搜狗 <https://deepi.sogou.com/>`_"
 msgstr "`Sogou <https://deepi.sogou.com/>`_"
 
 
-#: ../../source/settings.rst:50
+#: ../../source/settings.rst:54
 msgid "`百度 <https://cloud.baidu.com/product/ocr_general>`_"
 msgstr "`Baidu <https://cloud.baidu.com/product/ocr_general>`_"
 
 
-#: ../../source/settings.rst:51
+#: ../../source/settings.rst:55
 msgid "`腾讯 <https://cloud.tencent.com/product/generalocr>`_"
 msgstr "`Tencent <https://cloud.tencent.com/product/generalocr>`_"
 
 
-#: ../../source/settings.rst:52
+#: ../../source/settings.rst:56
 msgid "`有道 <http://ai.youdao.com/product-ocr-print.s>`_"
 msgstr "`Youdao <http://ai.youdao.com/product-ocr-print.s>`_"
 
 
-#: ../../source/settings.rst:53
+#: ../../source/settings.rst:57
 msgid "`OCRSPACE <https://ocr.space/OCRAPI>`_"
 msgstr "`OCRSPACE <https://ocr.space/OCRAPI>`_"
 
 
-#: ../../source/settings.rst:54
+#: ../../source/settings.rst:58
 msgid ""
 "`微软Azure <https://azure.microsoft.com/zh-cn/services/cognitive-services"
 "/computer-vision/>`_"
 msgstr "`Microsoft Azure <https://azure.microsoft.com/zh-cn/services/cognitive-services/computer-vision/>`_"
 
 
-#: ../../source/settings.rst:57
+#: ../../source/settings.rst:61
 msgid ""
 "机器翻译见BasicCAT的\\ `文档 "
 "<https://docs.basiccat.org/en/latest/advancedFeatures.html#id2>`_。"
 msgstr "For Machine translation, see BasicCAT's `docs <https://docs.basiccat.org/en/latest/advancedFeatures.html#id2>`_."
+
+
+#: ../../source/settings.rst:64
+msgid "外观设置"
+msgstr "Appearance Settings"
+
+
+#: ../../source/settings.rst:66
+msgid "点击菜单-文件-偏好设置-主题可以对外观进行设置，除了默认主题，还有黑色、绿色主题。"
+msgstr "Go to File->Preferences->Theme to adjust the appearance. In addition to the default theme, there are black and green themes."
+
+
+#: ../../source/settings.rst:68
+msgid "此外也能利用CSS调整软件的外观。"
+msgstr "You can also use external CSS to adjust the appearance of the software."
+
+
+#: ../../source/settings.rst:70
+msgid "例如以下CSS文件能够控制文字编辑区域的文字大小："
+msgstr "For example, the following CSS can control the text size of the text editing areas:"
 
 

@@ -17,8 +17,12 @@
 
 发布模型后，在菜单-文件-偏好设置-通用里设置发布了URL，同时还需要填写对应的API。
 
+此外也支持调用基于Darknet Yolo或者TensorFlow Object Detection API训练的离线气泡检测模型。
+
 文字图像识别
 ++++++++++++++
+
+软件默认调用本地模型识别文字和非文字区域。此外也可以调用API服务。
 
 默认地址为：`<http://127.0.0.1:8082/classify>`_
 
@@ -56,3 +60,17 @@ OCR:
 
 机器翻译见BasicCAT的\ `文档 <https://docs.basiccat.org/en/latest/advancedFeatures.html#id2>`_。
 
+外观设置
+-----------
+
+点击菜单-文件-偏好设置-主题可以对外观进行设置，除了默认主题，还有黑色、绿色主题。
+
+此外也能利用CSS调整软件的外观。
+
+例如以下CSS文件能够控制文字编辑区域的文字大小：
+
+::
+
+    .text-area {
+        -fx-font-size: 25 !important;
+    }

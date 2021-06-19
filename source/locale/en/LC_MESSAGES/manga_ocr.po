@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Xu Lihang
+# This file is distributed under the same license as the ImageTrans
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ImageTrans Documentation 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-19 20:37+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../source/manga_ocr.rst:2
+msgid "日漫OCR"
+msgstr "Manga OCR"
+
+
+#: ../../source/manga_ocr.rst:4
+msgid "日语漫画的文字从右向左竖向排列，并且会带有用于注音的振假名，所以处理方式会有不同。"
+msgstr "The text of Japanese manga is arranged vertically from right to left, and there will be Furigana for phonetic notation, so the processing methods will be different."
+
+
+#: ../../source/manga_ocr.rst:6
+msgid "以下是ImageTrans中针对日漫OCR的相关功能设计。"
+msgstr "The following is the related features of ImageTrans for manga OCR."
+
+
+#: ../../source/manga_ocr.rst:8
+msgid "去除振假名"
+msgstr "Strip Furigana"
+
+
+#: ../../source/manga_ocr.rst:10
+msgid "勾选OCR工具栏的去除振假名，OCR时会把图像中的振假名去除。"
+msgstr "Check Strip Furigana on the OCR toolbar to remove Furigana in the image during OCR."
+
+
+#: ../../source/manga_ocr.rst:12 ../../source/manga_ocr.rst:24
+msgid "原图："
+msgstr "Original image:"
+
+
+#: ../../source/manga_ocr.rst:16
+msgid "去除后的图："
+msgstr "After:"
+
+
+#: ../../source/manga_ocr.rst:20
+msgid "竖排转横排"
+msgstr "Vertical to Horizontal"
+
+
+#: ../../source/manga_ocr.rst:22
+msgid "勾选OCR工具栏的转换图片为横排，OCR时会以横排的方式重新排列文字。这样许多仅能识别横排日语的OCR引擎就也能用了。"
+msgstr "Check Vertical to Horizontal in the OCR toolbar so that the text will be rearranged in during OCR. In this way, many OCR engines that can only recognize horizontal Japanese can also be used."
+
+
+#: ../../source/manga_ocr.rst:28
+msgid "转换后的图："
+msgstr "After:"
+
+
+#: ../../source/manga_ocr.rst:32
+msgid "启发式文字检测方法的参数设置"
+msgstr "Parameter Setting of The Heuristic Text Detection Method"
+
+
+#: ../../source/manga_ocr.rst:34
+msgid "默认的启发式文字检测方法先横向合并，再纵向合并。OCR日漫时，可以设置为先纵向合并后横向合并，并调整纵向合并时文字行的重叠比例以避免不同段落文字被合并的问题。"
+msgstr "The default heuristic text detection method merges horizontally and then vertically. For manga, it can be set to merge vertically and then horizontally. The overlapping ratio of text lines can also be adjusted to avoid the problem of merging different paragraphs."
+
+
+#: ../../source/manga_ocr.rst:36
+msgid "从右向左阅读顺序"
+msgstr "Right to Left Reading Order"
+
+
+#: ../../source/manga_ocr.rst:38
+msgid "在项目设置中勾选此选项，合并文字区域时，会把右边的文字放在前面。"
+msgstr "Check this option in project settings so that when merging text areas, the text on the right will be placed in the front."
+
+

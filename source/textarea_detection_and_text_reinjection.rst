@@ -31,7 +31,7 @@ OCR等操作会自动略过文字区域可能性较低的区域。
 
 文字区域检测的算法细节见此：`基于规则的漫画文字检测方法 <http://blog.xulihang.me/text-localization-for-comics/>`_
 
-文字区域置信度获取是利用Tensorflow提供的脚本基于卷积神经网络预训练模型重新训练的，相关代码见此： `<https://github.com/xulihang/text-image-classifier>`_。
+文字区域置信度获取是利用TensorFlow提供的脚本基于卷积神经网络预训练模型重新训练的，相关代码见此： `<https://github.com/xulihang/text-image-classifier>`_。
 
 文字区域检测的操作本工具提供手动分步操作功能，操作方式是菜单栏-编辑-文字区域操作以及右侧编辑区的合并上下区域和合并左右区域按钮。
 

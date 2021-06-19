@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ImageTrans Documentation 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-08 19:03+0800\n"
+"POT-Creation-Date: 2021-06-19 20:37+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,9 +92,9 @@ msgstr "The algorithm details of text area detection can be found here: `Rules-b
 
 #: ../../source/textarea_detection_and_text_reinjection.rst:34
 msgid ""
-"文字区域置信度获取是利用Tensorflow提供的脚本基于卷积神经网络预训练模型重新训练的，相关代码见此： "
+"文字区域置信度获取是利用TensorFlow提供的脚本基于卷积神经网络预训练模型重新训练的，相关代码见此： "
 "`<https://github.com/xulihang/text-image-classifier>`_。"
-msgstr "ImageTrans uses a text/non-text image classifer trained with Tensorflow based on convolutional neural network pre-trained models. Relevant code can be found here: `<https://github.com/xulihang/text-image-classifier>`_."
+msgstr "The confidence of text areas is obtained using a CNN model retrained using TensorFlow's script. See the code here: `<https://github.com/xulihang/text-image-classifier>`_."
 
 
 #: ../../source/textarea_detection_and_text_reinjection.rst:36

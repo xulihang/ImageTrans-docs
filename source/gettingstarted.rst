@@ -4,19 +4,55 @@
 软件安装
 -----------
 
-Windows完整版解压到任意目录后即可，Mac完整版打开dmg文件安装ImageTrans到应用目录即可。
+完整版
+++++++++++++
 
-需要使用Tesseract进行OCR的话请自行下载安装（`地址 <https://tesseract-ocr.github.io/tessdoc/Downloads.html>`_）。这里再提供一个Windows的绿色版本：`百度网盘（提取码：ktpt） <https://pan.baidu.com/s/1gJZyuntLetZEpFWI8XqkXA>`_。下载后将tesseract-ocr目录和ImageTrans放在一起。额外的语言包请放在 ``tesseract-ocr\tessdata`` 目录下。
+Windows完整版解压到任意目录后运行ImageTrans.exe即可，Mac完整版打开dmg文件安装ImageTrans到应用目录即可。
 
-本工具支持的在线OCR和机器翻译服务均需要设置API才能使用，其中谷歌翻译、云译和ocrspace为免费提供。付费用户还能获得百度和Azure的API。
+跨平台版
+++++++++++++
 
-以下内容是对于跨平台的版本：
-
-下载ImageTrans的压缩包，解压到任意目录，双击ImageTrans.jar或者命令行输入 ``java -jar ImageTrans.jar`` 即可运行。
+下载zip压缩包，解压到任意目录，双击ImageTrans.jar或者命令行输入 ``java -jar ImageTrans.jar`` 即可运行。
 
 软件依赖JRE 1.8运行环境，请先下载安装。下载地址：1. `Liberica 8u275 full version  <https://github.com/bell-sw/Liberica/releases/tag/8u275%2B1>`_ 2. `百度网盘（提取码：mhsy） <https://pan.baidu.com/s/1t0g6htstFge0h2dOS0aBog>`_
 
 软件依赖OpenCV，请根据系统下载运行库文件，解压后放在ImageTrans的目录下。下载地址：1. `GitHub <https://github.com/xulihang/ImageTrans-docs/releases/tag/opencv>`_, 2. `百度网盘 <https://pan.baidu.com/s/1D9EZMKqwgqQjdEjwYFkZQQ>`_
+
+OCR与机器翻译的配置
+++++++++++++++++++++++++
+
+本工具集成了常见的在线OCR和机器翻译服务。一般这些服务均需要设置API密钥才能使用。ImageTrans内置了部分服务的API密钥，可以直接使用：
+
+OCR： 百度、OCRSPACE、Azure
+
+机器翻译： 百度、小牛、腾讯、谷歌免密钥版
+
+另外也支持若干离线OCR和机器翻译。
+
+离线OCR:
+
+1. Tesseract
+
+需要使用Tesseract进行OCR的话请自行下载安装（`地址 <https://tesseract-ocr.github.io/tessdoc/Downloads.html>`_），并在ImageTrans里指定Tesseract的路径。
+
+这里再提供一个Windows的绿色版本：`百度网盘（提取码：ktpt） <https://pan.baidu.com/s/1gJZyuntLetZEpFWI8XqkXA>`_。下载后将tesseract-ocr目录和ImageTrans放在一起。额外的语言包请放在 ``tesseract-ocr\tessdata`` 目录下。
+
+2. Windows10自带OCR
+
+Windows10自带OCR功能，但需要先安装所需语言。它和Azure、OCRSPACE的引擎其实是同一个。ImageTrans中这一OCR引擎的名字叫做WinRT，因为它是基于Windows的 `Windows Runtime API <https://docs.microsoft.com/en-us/uwp/api/windows.media.ocr?view=winrt-20348>`_。
+
+3. PaddleOCR、EasyOCR
+
+需要自行安装Python和上述软件，并用提供的server脚本运行，例如\ `PaddleOCR的Server <https://github.com/xulihang/ImageTrans_plugins/tree/master/paddleOCR/server>`_。
+
+4. ABBYY
+
+支持调用ABBYY FineReader进行OCR，需要在偏好设置里指定软件的FineCMD.exe的路径。
+
+离线机器翻译：
+
+1. OPUS-CAT。OPUS-CAT是芬兰赫尔辛基自然语言处理小组的离线机器翻译引擎，到\ `官网 <https://helsinki-nlp.github.io/OPUS-CAT/install>`_\ 下载安装后使用\ `Fiskmo机器翻译插件 <https://github.com/xulihang/BasicCAT/tree/master/plugins/fiskmoMT>`_\ 调用。
+2. eztrans xp。这是一个日韩翻译软件。使用方法见此\ `issue <https://github.com/xulihang/ImageTrans-docs/issues/29#issuecomment-818754544>`_。
 
 
 验证登录
@@ -48,6 +84,7 @@ Windows完整版解压到任意目录后即可，Mac完整版打开dmg文件安�
 
 或者用右键菜单-粘贴图片的方式添加单张图片。
 
+此外亦能导入PDF文件，并提取可复制的文字。
 
 文字转录
 -----------
@@ -111,7 +148,7 @@ OCR
 * XLSX表格，和TXT的内容一样
 * XLSX表格-根据目录建立工作表，按子目录保存图片名、原文和译文信息
 * 所有文本，按每张图片生成包含图片文字的txt文档
-* 供翻译的文档，将原文和译文信息以表格的形式导出为一个docx文档或者txt文档
+* 供翻译的文档，将原文和译文信息以表格的形式导出为一个docx、txt或者XLIFF文件
 
 翻译
 -----------
