@@ -1,13 +1,22 @@
 软件设置
 ==================================================
 
+
+
 通用设置
 -----------
+
+.. _balloon-detection:
 
 气泡检测
 +++++++++++++
 
-本工具的气泡检测使用百度EasyDL和Azure的目标检测服务。需要自行开通账号并训练。
+
+本工具的气泡检测支持调用基于Darknet Yolo或者TensorFlow Object Detection API训练的离线气泡检测模型，需要将模型放在软件的目录中并在菜单-文件-偏好设置-通用里启用离线气泡检测。
+
+现有的离线模型：\ `日漫气泡识别模型 <https://github.com/xulihang/ImageTrans-docs/issues/135>`_。
+
+此外也能使用百度EasyDL和微软Azure的目标检测服务。需要自行开通账号并训练。
 
 推荐的标注方法：
 
@@ -15,9 +24,8 @@
 
 .. image:: /images/image_annotation.JPG
 
-发布模型后，在菜单-文件-偏好设置-通用里设置发布了URL，同时还需要填写对应的API。
+发布模型后，在菜单-文件-偏好设置-API里设置发布了的URL，同时还需要填写对应的API。
 
-此外也支持调用基于Darknet Yolo或者TensorFlow Object Detection API训练的离线气泡检测模型。
 
 文字图像识别
 ++++++++++++++
@@ -50,7 +58,7 @@ API设置
 OCR:
 
 * `Google <https://cloud.google.com/vision/docs/ocr>`_
-* `搜狗 <https://deepi.sogou.com/>`_
+* `Clova <https://clova.ai/>`_
 * `百度 <https://cloud.baidu.com/product/ocr_general>`_
 * `腾讯 <https://cloud.tencent.com/product/generalocr>`_
 * `有道 <http://ai.youdao.com/product-ocr-print.s>`_
@@ -74,3 +82,6 @@ OCR:
     .text-area {
         -fx-font-size: 25 !important;
     }
+
+
+文本编辑区域的字体也能在项目设置中修改。

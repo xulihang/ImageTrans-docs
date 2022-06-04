@@ -29,7 +29,7 @@ OCR等操作会自动略过文字区域可能性较低的区域。
 
 因为不同的漫画尺寸不同，需要设置不同的文字区域检测参数，可以在项目-设置-文字区域检测里进行设置。
 
-文字区域检测的算法细节见此：`基于规则的漫画文字检测方法 <http://blog.xulihang.me/text-localization-for-comics/>`_
+文字区域检测的算法细节见此：`基于规则的漫画文字检测方法 <http://blog.xulihang.me/text-localization-for-comics/>`_。
 
 文字区域置信度获取是利用TensorFlow提供的脚本基于卷积神经网络预训练模型重新训练的，相关代码见此： `<https://github.com/xulihang/text-image-classifier>`_。
 
@@ -38,7 +38,7 @@ OCR等操作会自动略过文字区域可能性较低的区域。
 自然场景文字检测
 ++++++++++++++++++++++++++
 
-自然场景文字检测功能允许用户调用EAST、CRAFT等开源自然场景文字检测方法，这类方法的准确率较高，并能检测倾斜文本，但一般需要花费较长的运行时间。
+自然场景文字检测功能允许用户调用DB、EAST、CRAFT等开源自然场景文字检测方法，这类方法的准确率较高，并能检测倾斜文本，但一般需要花费较长的运行时间。
 
 
 译文回填
@@ -64,7 +64,13 @@ OCR等操作会自动略过文字区域可能性较低的区域。
 
 .. image:: /images/mask_editor_and_text_remover.jpg
 
-掩膜生成和图像修复支持调用插件以使用第三方的方法，现有的插件是 `Sickzil-machine <https://github.com/xulihang/SickZil-Machine>`_。
+掩膜生成和图像修复支持调用插件以使用第三方的方法，现有的插件是\ `Sickzil-machine <https://github.com/xulihang/ImageTrans_plugins>`_\ 和\ `Lama <https://github.com/xulihang/ImageTrans_plugins/tree/master/LamaInpaint>`_。
+
+
+其它情况：
+
+如果存在无文字原图，可以通过\ `无文字原图和纯文字图管理器 <https://github.com/xulihang/ImageTrans-docs/issues/199#issuecomment-1133639931>`_\ 设置无文字原图，查看翻译时会直接使用原图。
+
 
 译文放置
 +++++++++++++

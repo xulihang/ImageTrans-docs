@@ -25,7 +25,7 @@ OCR与机器翻译的配置
 
 OCR： 百度、OCRSPACE、Azure
 
-机器翻译： 百度、小牛、腾讯、谷歌免密钥版
+机器翻译： 百度、腾讯、云译、mymemory、DeepL免密钥版
 
 另外也支持若干离线OCR和机器翻译。
 
@@ -39,26 +39,30 @@ OCR： 百度、OCRSPACE、Azure
 
 2. Windows10自带OCR
 
-Windows10自带OCR功能，但需要先安装所需语言。它和Azure、OCRSPACE的引擎其实是同一个。ImageTrans中这一OCR引擎的名字叫做WinRT，因为它是基于Windows的 `Windows Runtime API <https://docs.microsoft.com/en-us/uwp/api/windows.media.ocr?view=winrt-20348>`_。
+Windows10自带OCR功能，但需要先安装所需语言。它和Azure、OCRSPACE的引擎其实是同一个。ImageTrans中这一OCR引擎的名字叫做WinRT，因为它是基于Windows的\ `Windows Runtime API <https://docs.microsoft.com/en-us/uwp/api/windows.media.ocr?view=winrt-20348>`_。
 
-3. PaddleOCR、EasyOCR
+3. mangaOCR
 
-需要自行安装Python和上述软件，并用提供的server脚本运行，例如\ `PaddleOCR的Server <https://github.com/xulihang/ImageTrans_plugins/tree/master/paddleOCR/server>`_。
+该OCR能十分准确地识别日漫的文字。安装说明见此：\ `<https://github.com/xulihang/ImageTrans_plugins/tree/master/mangaOCR>`_。
 
 4. ABBYY
 
 支持调用ABBYY FineReader进行OCR，需要在偏好设置里指定软件的FineCMD.exe的路径。
 
+5. PaddleOCR、EasyOCR
+
+需要自行安装Python和上述软件，并用提供的server脚本运行，例如\ `PaddleOCR的Server <https://github.com/xulihang/ImageTrans_plugins/tree/master/paddleOCR/server>`_。
+
 离线机器翻译：
 
-1. OPUS-CAT。OPUS-CAT是芬兰赫尔辛基自然语言处理小组的离线机器翻译引擎，到\ `官网 <https://helsinki-nlp.github.io/OPUS-CAT/install>`_\ 下载安装后使用\ `Fiskmo机器翻译插件 <https://github.com/xulihang/BasicCAT/tree/master/plugins/fiskmoMT>`_\ 调用。
-2. eztrans xp。这是一个日韩翻译软件。使用方法见此\ `issue <https://github.com/xulihang/ImageTrans-docs/issues/29#issuecomment-818754544>`_。
+1. OPUS-CAT。OPUS-CAT是芬兰赫尔辛基自然语言处理小组的离线机器翻译引擎，到\ `官网 <https://helsinki-nlp.github.io/OPUS-CAT/install>`_\ 下载安装后使用\ `OPUS-CAT机器翻译插件 <https://github.com/xulihang/ImageTrans-docs/issues/177#issuecomment-1070305647>`_\ 调用。
+2. eztrans xp。这是一个日韩翻译软件。使用方法见\ `issue29 <https://github.com/xulihang/ImageTrans-docs/issues/29#issuecomment-818754544>`_。
 
 
 验证登录
 ------------
 
-每次运行ImageTrans时，会显示验证器，需要填入购买时填写的email和订单号。订单号可以在收到的邮件中找到。
+运行ImageTrans时，会显示验证器，需要填入购买时填写的email和订单号。订单号可以在订单页面中找到。
 
 .. image:: /images/validator.jpg
 
@@ -112,18 +116,18 @@ OCR
 自动识别文字
 ++++++++++++++++++++++++++
 
-选择语言和OCR引擎，点击菜单-编辑-自动识别文字，可以自动检测文字区域并转录。其中有道是按段落识别，其它引擎是按行识别，可以通过右侧编辑区域的合并左右区域和合并上下区域进行合并。
+选择语言和OCR引擎，点击菜单-编辑-自动识别文字，可以自动检测文字区域并转录。其中有道和谷歌是按段落识别，其它引擎是按行识别，可以通过右侧编辑区域的合并左右区域和合并上下区域进行合并。
 
 .. image:: /images/automatic_text_recognition.gif
 
 自动识别气泡
 ++++++++++++++++++++++++++
 
-选择语言和OCR引擎（仅限百度或者Azure），点击菜单-编辑-自动识别气泡，可以自动识别气泡。
+点击菜单-编辑-自动识别气泡，可以自动识别气泡。默认使用百度的在线气泡检测服务，可以自行配置离线气泡检测，详见\ :ref:`balloon-detection`。
 
 .. image:: /images/balloon_detection.gif
 
-另提供较为复杂的启发式和自然场景文字检测方法，详见 :ref:`text-detection`
+另提供较为复杂的启发式和自然场景文字检测方法，详见\ :ref:`text-detection`。
 
 自动OCR所有区域
 ++++++++++++++++++++++++++
@@ -137,6 +141,8 @@ OCR
 
 .. image:: /images/sort.gif
 
+另外针对漫画，提供分镜检测功能，可以在分镜的基础上进行排序，详见\ `issue147 <https://github.com/xulihang/ImageTrans-docs/issues/147>`_。
+
 导出
 +++++++++++++
 
@@ -149,13 +155,14 @@ OCR
 * XLSX表格-根据目录建立工作表，按子目录保存图片名、原文和译文信息
 * 所有文本，按每张图片生成包含图片文字的txt文档
 * 供翻译的文档，将原文和译文信息以表格的形式导出为一个docx、txt或者XLIFF文件
+* 网页-将项目导出为网页，可供局域网内的手机阅读，支持语音朗读和按分镜阅读
 
 翻译
 -----------
 
 在译文区域输入译文并点击保存可以完成一个文字区域的翻译。
 
-可以将翻译导出为docx文档供外部人员翻译，之后再通过菜单-导回翻译-docx文档进行导回。
+可以将翻译导出为docx、txt或者XLIFF文档供外部人员翻译，之后再通过菜单-导回翻译进行导回。
 
 .. image:: /images/reimport.png
 
@@ -176,14 +183,14 @@ OCR
 .. image:: /images/pretranslate.png
 
 
-预览
+查看翻译
 +++++++++++
 
-点击左下角的预览替换效果，可以预览翻译效果。选择精确模式会自动识别文字进行抹除并修复背景，非精确模式则会用背景颜色进行遮盖。
+勾选左下角的查看翻译，可以查看翻译后的图片。精确模式会生成文字掩膜并修复背景，非精确模式则会用背景颜色进行遮盖。
 
 .. image:: /images/Preview.gif
 
-勾选排版模式时，译文区域将被框出，并支持调整位置。
+在查看翻译状态下勾选排版模式，译文区域将被框出，并支持调整位置和修改样式。
 
 .. image:: /images/design_mode.jpg
 
@@ -191,40 +198,59 @@ OCR
 生成成品图
 --------------
 
-首先将图片比例调整为100%，之后点击预览，得到成品图。点击文件-导出当前图片为-JPG，结果将输出在对应图片的文件夹的out文件夹中。另一选项ORA支持将文件导出为多层图像格式ORA，该格式能保存图层信息，供PS、Gimp和Krita等图像编辑软件编辑。
+首先将图片比例调整为100%，之后点击查看翻译，得到成品图。点击文件-导出当前图片为-JPG，结果将输出在对应图片的文件夹的out文件夹中。另一选项ORA支持将文件导出为多层图像格式ORA，该格式能保存图层信息，供PS、Gimp和Krita等图像编辑软件编辑。
 
 除此以外，ImageTrans可支持导出PSD。
 
 设置文字样式
 ------------------
 
-设置文字样式主要有两个作用，一个是在ImageTrans中进行预览，一个是用于导出PSD时设置字体。
+设置文字样式主要有两个作用，一个是在ImageTrans中使用，一个是用于导出PSD时设置字体。
 
-点击菜单-项目-设置-字体样式可以进行设置使用的字体、文字大小、行距、对齐方式等等。
+
+点击菜单-项目-设置-字体样式可以设置全局样式，设置选项包括使用的字体、文字大小、文字方向、行距、对齐方式、旋转角度、描边等等。
 
 .. image:: /images/fontstyles.jpg
 
-如果要修改某个样式，请点击该样式以加载设置，修改后点击添加，然后删去原来的样式。排在第一的样式是默认样式。
+如果要修改某个样式，请点击该样式以加载设置，修改后点击添加，然后删去原来的样式。排在第一的样式是默认样式。在样式上方右键可以执行排序和删除操作，在列表的空白处右键可以选择从其它项目导入样式。
 
-因为Photoshop需要的字体名比较特殊，需要从PS中获得。方法是在PS中新建一张图片，建立一个文本框，设置所需字体，并完成文字编辑操作，是文本框处于非编辑状态。之后在ImageTrans中点击读取即可。非Windows系统需要使用readFont.jsx脚本。
-
-.. image:: /images/readPSfont.jpg
-
-可以给文字区域设置专门的字体样式。
+设置全局样式后可以给文字区域指定使用哪个样式。
 
 .. image:: /images/set_fontstyle.png
 
-另外也支持设置本地样式，除了全局文字样式包含的内容外，支持描边和旋转角度的设置。设置本地字体样式时会调出全局字体样式的设置界面，默认读取添加在末尾的样式为本地字体样式。
-
-.. image:: /images/localstyle.jpg
+另外也支持设置本地样式。本地样式的优先级大于全局样式。
 
 点击左侧的字体按钮以启用字体设置工具栏，可以便捷地设置本地样式。
 
 .. image:: /images/fontstyle_bar.jpg
 
+也可以通过文字区域列表上方的字体设置进行设置。它有一个专门的界面，能设置描边、旋转、是否启用本地样式。它能调出全局字体样式的设置界面进行更详细的设置（会读取添加在末尾的样式为本地字体样式）。
+
+.. image:: /images/localstyle.jpg
+
+
 点击左侧的多选按钮以启动多选工具栏，可以调整多个文本框的位置并统一其字体样式。
 
 .. image:: /images/selection_bar.jpg
+
+
+获取Photoshop用字体名
+++++++++++++++++++++++++++++++++++++++++
+
+因为Photoshop需要的字体名比较特殊，需要从PS中获得。方法是在PS中新建一张图片，建立一个文本框，设置所需字体，并完成文字编辑操作，是文本框处于非编辑状态。之后在ImageTrans中点击读取即可。非Windows系统需要使用readFont.jsx脚本。
+
+.. image:: /images/readPSfont.jpg
+
+
+自动调整字体大小
++++++++++++++++++++++++++++++++++++++++
+
+软件默认能根据文字区域大小自动调整字体大小。可以在项目设置中设置是否启用该功能以及最大、最小字体大小。
+
+字体大小的优先级是这样的：
+
+本地样式中的字体大小>自动调整字体大小>全局样式中的字体大小。
+
 
 批处理
 --------------
