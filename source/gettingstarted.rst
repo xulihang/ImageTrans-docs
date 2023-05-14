@@ -14,7 +14,7 @@ Windows完整版解压到任意目录后运行ImageTrans.exe即可，Mac完整�
 
 下载zip压缩包，解压到任意目录，双击ImageTrans.jar或者命令行输入 ``java -jar ImageTrans.jar`` 即可运行。
 
-软件依赖JRE 1.8运行环境，请先下载安装。下载地址：1. `Liberica 8u275 full version  <https://github.com/bell-sw/Liberica/releases/tag/8u275%2B1>`_ 2. `百度网盘（提取码：mhsy） <https://pan.baidu.com/s/1t0g6htstFge0h2dOS0aBog>`_
+软件依赖JRE 1.8以上运行环境，请先下载安装。下载地址：1. `Liberica JRE 11.0.19 full version  <https://github.com/bell-sw/Liberica/releases/tag/11.0.19%2B7>`_ 2. `百度网盘（提取码：mhsy） <https://pan.baidu.com/s/1t0g6htstFge0h2dOS0aBog>`_
 
 软件依赖OpenCV，请根据系统下载运行库文件，解压后放在ImageTrans的目录下。下载地址：1. `GitHub <https://github.com/xulihang/ImageTrans-docs/releases/tag/opencv>`_, 2. `百度网盘 <https://pan.baidu.com/s/1D9EZMKqwgqQjdEjwYFkZQQ>`_
 
@@ -45,11 +45,15 @@ Windows10自带OCR功能，但需要先安装所需语言。它和Azure、OCRSPA
 
 该OCR能十分准确地识别日漫的文字。安装说明见此：\ `<https://github.com/xulihang/ImageTrans_plugins/tree/master/mangaOCR>`_。
 
-4. ABBYY
+4. macOCR
+
+macOS版本10.15以上系统自带的OCR。使用说明见此：\ `<https://github.com/xulihang/ImageTrans-docs/issues/341>`_。
+
+5. ABBYY
 
 支持调用ABBYY FineReader进行OCR，需要在偏好设置里指定软件的FineCMD.exe的路径。
 
-5. PaddleOCR、EasyOCR
+6. PaddleOCR、EasyOCR
 
 需要自行安装Python和上述软件，并用提供的server脚本运行，例如\ `PaddleOCR的Server <https://github.com/xulihang/ImageTrans_plugins/tree/master/paddleOCR/server>`_。
 
