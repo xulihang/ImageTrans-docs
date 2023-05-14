@@ -257,6 +257,32 @@ OCR
 
 本地样式中的字体大小>自动调整字体大小>全局样式中的字体大小。
 
+富文本
+++++++++++++++++++
+
+ImageTrans可以使用BBCode来标记富文本格式，比如下图中运用的粗体和斜体。
+
+.. image:: /images/richtext_example.jpg
+
+是使用这样的标记文本表示的： ``留[b][fi]性感[/fi][/b]的绿发，穿绿皮衣的那个人。`` 。
+
+下面是支持的标记说明：
+
+.. csv-table:: Frozen Delights!
+   :header: "标签名", "效果", "用例"
+   :widths: 10, 10, 30
+
+   "b", "粗体", "[b]文本[/b]"
+   "i", "斜体", "[i]文本[/i]"
+   "fb", "仿粗体", "[fb]文本[/fb]"
+   "fi", "仿斜体", "[fi]文本[/fi]"
+   "fontfamily", "字体名", "[fontname=Arial]文本[/fontname]"
+   "fontsize", "文字大小", "[fontsize=32]文本[/fontsize]"
+   "fontcolor", "文字颜色", "[fontcolor=#FF0000]文本[/fontcolor]"
+
+点编辑区域右侧的按钮R可以启用富文本编辑器，便于快速插入对应的BBCode代码。
+
+.. image:: /images/richtext_editor.jpg
 
 批处理
 --------------
