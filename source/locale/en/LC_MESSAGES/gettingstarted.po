@@ -126,7 +126,12 @@ msgid ""
 "Windows10自带OCR功能，但需要先安装所需语言。它和Azure、OCRSPACE的引擎其实是同一个。ImageTrans中这一OCR引擎的名字叫做WinRT，因为它是基于Windows的\\"
 " `Windows Runtime API <https://docs.microsoft.com/en-"
 "us/uwp/api/windows.media.ocr?view=winrt-20348>`_。"
-msgstr " `Windows Runtime API <https://docs.microsoft.com/en-us/uwp/api/windows.media.ocr?view=winrt-20348>`_."
+msgstr ""
+"Windows 10 comes with built-in OCR, but you need to install the language "
+"environment first. Actually, it has the same engine as Azure and "
+"OCRSPACE. This OCR engine in ImageTrans is called WinRT because it is "
+"based on the `Windows Runtime API <https://docs.microsoft.com/en-"
+"us/uwp/api/windows.media.ocr?view=winrt-20348>`_."
 
 
 #: ../../source/gettingstarted.rst:44
