@@ -24,7 +24,6 @@ msgstr "Contents"
 
 
 #: ../../source/index.rst:2
-#, fuzzy
 msgid "ImageTrans使用手册"
 msgstr "ImageTrans Documentation"
 
