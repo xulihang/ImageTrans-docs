@@ -8,7 +8,7 @@ ImageTrans实现了一套文字区域检测和译文回填方法。
 文字区域检测
 ----------------
 
-ImageTrans支持四种文字检测方式：OCR提供的检测功能、基于深度学习目标检测的气泡检测功能、基于规则的启发式检测方法和自然场景文字检测方法。
+ImageTrans支持四种文字检测方式：OCR提供的检测功能、基于深度学习目标检测的气泡检测功能、基于规则的启发式检测方法和自然场景文字检测方法。更多可以看这篇博客：\ `为图片翻译选择合适的文字检测方法 <https://www.basiccat.org/zh/choose-a-suitable-text-detection-method-for-image-translation/>`_。
 
 这里主要介绍启发式和自然场景文字检测方法。
 
@@ -31,7 +31,7 @@ OCR等操作会自动略过文字区域可能性较低的区域。
 
 文字区域检测的算法细节见此：`基于规则的漫画文字检测方法 <http://blog.xulihang.me/text-localization-for-comics/>`_。
 
-文字区域置信度获取是利用TensorFlow提供的脚本基于卷积神经网络预训练模型重新训练的，相关代码见此： `<https://github.com/xulihang/text-image-classifier>`_。
+文字区域置信度获取是利用TensorFlow提供的脚本基于卷积神经网络预训练模型重新训练的，相关代码见此：`<https://github.com/xulihang/text-image-classifier>`_。
 
 文字区域检测的操作本工具提供手动分步操作功能，操作方式是菜单栏-编辑-文字区域操作以及右侧编辑区的合并上下区域和合并左右区域按钮。
 
@@ -72,6 +72,8 @@ OCR等操作会自动略过文字区域可能性较低的区域。
 如果存在无文字原图，可以通过\ `无文字原图和纯文字图管理器 <https://github.com/xulihang/ImageTrans-docs/issues/199#issuecomment-1133639931>`_\ 设置无文字原图，查看翻译时会直接使用原图。
 
 
+更多可以看这篇博客：\ `ImageTrans图片文字抹除详解 <https://www.basiccat.org/zh/details-about-image-text-removal-using-imagetrans/>`_。
+
 译文放置
 +++++++++++++
 
@@ -82,6 +84,11 @@ OCR等操作会自动略过文字区域可能性较低的区域。
 ++++++++++++++
 
 本工具能较粗略地自动检测背景颜色和文字颜色，点击编辑-颜色操作进行相关操作。
+
+旋转检测
+++++++++++++++
+
+本工具支持检测旋转的文字的角度，可以通过编辑-文字区域操作菜单或者自定义工作流进行操作。
 
 
 

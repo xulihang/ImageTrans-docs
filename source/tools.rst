@@ -48,3 +48,9 @@ fileListPath：待处理文件的列表，用换行分隔
 `ImageTrans Chrome插件 <https://github.com/xulihang/ImageTrans_chrome_extension>`_\ 需要使用这一功能。
 
 该插件能用ImageTrans翻译网页中的图片，图片和处理结果会自动添加到ImageTrans当前的项目中。
+
+
+目标检测标注数据管理器
+++++++++++++++++++++++++++++
+
+该工具可以将项目数据以YOLO的数据格式导出或者导回。支持OBB格式。

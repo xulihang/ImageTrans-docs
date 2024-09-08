@@ -12,11 +12,11 @@ Windows完整版解压到任意目录后运行ImageTrans.exe即可，Mac完整�
 跨平台版
 ++++++++++++
 
-下载zip压缩包，解压到任意目录，双击ImageTrans.jar或者命令行输入 ``java -jar ImageTrans.jar`` 即可运行。
+下载zip压缩包，解压到任意目录，双击ImageTrans.jar或者命令行输入\ ``java -jar ImageTrans.jar``\ 即可运行。
 
-软件依赖JRE 1.8以上运行环境，请先下载安装。下载地址：1. `Liberica JRE 11.0.19 full version  <https://github.com/bell-sw/Liberica/releases/tag/11.0.19%2B7>`_ 2. `百度网盘（提取码：mhsy） <https://pan.baidu.com/s/1t0g6htstFge0h2dOS0aBog>`_
+软件依赖JRE 11以上运行环境，请先下载安装。下载地址：\ `Liberica JRE 11.0.19 full version  <https://github.com/bell-sw/Liberica/releases/tag/11.0.19%2B7>`_
 
-软件依赖OpenCV，请根据系统下载运行库文件，解压后放在ImageTrans的目录下。下载地址：1. `GitHub <https://github.com/xulihang/ImageTrans-docs/releases/tag/opencv>`_, 2. `百度网盘 <https://pan.baidu.com/s/1D9EZMKqwgqQjdEjwYFkZQQ>`_
+软件依赖OpenCV，请根据系统下载运行库文件，解压后放在ImageTrans的目录下。下载地址：\ `GitHub <https://github.com/xulihang/ImageTrans-docs/releases/tag/opencv>`_
 
 OCR与机器翻译的配置
 ++++++++++++++++++++++++
@@ -33,29 +33,29 @@ OCR： 百度、OCRSPACE、Azure
 
 1. Tesseract
 
-需要使用Tesseract进行OCR的话请自行下载安装（`地址 <https://tesseract-ocr.github.io/tessdoc/Downloads.html>`_），并在ImageTrans里指定Tesseract的路径。
+   需要使用Tesseract进行OCR的话请自行下载安装（`地址 <https://tesseract-ocr.github.io/tessdoc/Downloads.html>`_），并在ImageTrans里指定Tesseract的路径。
 
-这里再提供一个Windows的绿色版本：`百度网盘（提取码：ktpt） <https://pan.baidu.com/s/1gJZyuntLetZEpFWI8XqkXA>`_。下载后将tesseract-ocr目录和ImageTrans放在一起。额外的语言包请放在 ``tesseract-ocr\tessdata`` 目录下。
+   这里再提供一个Windows的安装版本：\ `UB-Mannheim Tesseract5 <https://github.com/UB-Mannheim/tesseract/releases/download/v5.4.0.20240606/tesseract-ocr-w64-setup-5.4.0.20240606.exe>`_。
 
 2. Windows10自带OCR
 
-Windows10自带OCR功能，但需要先安装所需语言。它和Azure、OCRSPACE的引擎其实是同一个。ImageTrans中这一OCR引擎的名字叫做WinRT，因为它是基于Windows的\ `Windows Runtime API <https://docs.microsoft.com/en-us/uwp/api/windows.media.ocr?view=winrt-20348>`_。
+   Windows10自带OCR功能，但需要先安装所需语言。它和Azure、OCRSPACE的引擎其实是同一个。ImageTrans中这一OCR引擎的名字叫做WinRT，因为它是基于Windows的\ `Windows Runtime API <https://docs.microsoft.com/en-us/uwp/api/windows.media.ocr?view=winrt-20348>`_。
 
 3. mangaOCR
 
-该OCR能十分准确地识别日漫的文字。安装说明见此：\ `<https://github.com/xulihang/ImageTrans_plugins/tree/master/mangaOCR>`_。
+   该OCR能十分准确地识别日漫的文字。安装说明见此：\ `<https://github.com/xulihang/ImageTrans_plugins/tree/master/mangaOCR>`_。
 
 4. macOCR
 
-macOS版本10.15以上系统自带的OCR。使用说明见此：\ `<https://github.com/xulihang/ImageTrans-docs/issues/341>`_。
+   macOS版本10.15以上系统自带的OCR。使用说明见此：\ `<https://github.com/xulihang/ImageTrans-docs/issues/341>`_。
 
 5. ABBYY
 
-支持调用ABBYY FineReader进行OCR，需要在偏好设置里指定软件的FineCMD.exe的路径。
+   支持调用ABBYY FineReader进行OCR，需要在偏好设置里指定软件的FineCMD.exe的路径。
 
 6. PaddleOCR、EasyOCR
 
-需要自行安装Python和上述软件，并用提供的server脚本运行，例如\ `PaddleOCR的Server <https://github.com/xulihang/ImageTrans_plugins/tree/master/paddleOCR/server>`_。
+   需要自行安装Python和上述软件，并用提供的server脚本运行，例如\ `PaddleOCR的Server <https://github.com/xulihang/ImageTrans_plugins/tree/master/paddleOCR/server>`_。
 
 离线机器翻译：
 
@@ -160,8 +160,9 @@ OCR
 * 所有文本，按每张图片生成包含图片文字的txt文档
 * 供翻译的文档，将原文和译文信息以表格的形式导出为一个docx、txt或者XLIFF文件
 * 网页，将项目导出为网页，可供局域网内的手机阅读，支持语音朗读和按分镜阅读
-* 图像PDF，将项目导出为PDF
+* 图像PDF，将项目导出为PDF，支持添加可搜索的文字层
 * TMX，导出原文译文为翻译记忆文件
+* 分镜，导出分镜图像为单张图片、条漫或者PDF
 
 翻译
 -----------
@@ -184,7 +185,7 @@ OCR
 预翻译
 ++++++++++++
 
-点击菜单-项目-批处理-预翻译，可以使用翻译记忆或者机器翻译进行批量翻译。当前只支持机器翻译。
+点击菜单-项目-批处理-预翻译，可以使用翻译记忆或者机器翻译进行批量翻译。
 
 .. image:: /images/pretranslate.png
 
@@ -204,9 +205,11 @@ OCR
 生成成品图
 --------------
 
-首先将图片比例调整为100%，之后点击查看翻译，得到成品图。点击文件-导出当前图片为-JPG，结果将输出在对应图片的文件夹的out文件夹中。另一选项ORA支持将文件导出为多层图像格式ORA，该格式能保存图层信息，供PS、Gimp和Krita等图像编辑软件编辑。
+点击文件-导出当前图片为-JPG，结果将输出在对应图片的文件夹的out文件夹中。选项ORA支持将文件导出为多层图像格式ORA，该格式能保存图层信息，供PS、Gimp和Krita等图像编辑软件编辑。
 
 除此以外，ImageTrans可支持导出PSD。
+
+如果要生成全部图片的成品图，需要通过项目-批处理-导出所有图片的成品图进行操作。
 
 设置文字样式
 ------------------
@@ -218,7 +221,7 @@ OCR
 
 .. image:: /images/fontstyles.jpg
 
-如果要修改某个样式，请点击该样式以加载设置，修改后点击添加，然后删去原来的样式。排在第一的样式是默认样式。在样式上方右键可以执行排序和删除操作，在列表的空白处右键可以选择从其它项目导入样式。
+排在第一的样式是默认样式。在样式上方右键可以执行排序和删除操作，在列表的空白处右键可以选择从其它项目导入样式。
 
 设置全局样式后可以给文字区域指定使用哪个样式。
 
@@ -272,10 +275,15 @@ ImageTrans可以使用BBCode来标记富文本格式，比如下图中运用的�
    :header: "标签名", "效果", "用例"
    :widths: 10, 10, 30
 
-   "b", "粗体", "[b]文本[/b]"
-   "i", "斜体", "[i]文本[/i]"
-   "fb", "仿粗体", "[fb]文本[/fb]"
-   "fi", "仿斜体", "[fi]文本[/fi]"
+   "b", "粗体（需要字体本身支持粗体）", "[b]文本[/b]"
+   "i", "斜体（需要字体本身支持斜体）", "[i]文本[/i]"
+   "fb", "仿粗体（仅用于横排）", "[fb]文本[/fb]"
+   "fi", "仿斜体（仅用于横排）", "[fi]文本[/fi] 或者 [fi=2,2,2]文本[/fi] 2,2,2分别代表倾斜程度、纵坐标偏移量和高度偏移量"
+   "u", "下划线（仅用于横排）", "[u]文本[/u]"
+   "s", "删除线（仅用于横排）", "[s]文本[/s]"
+   "h", "竖排内横排（仅用于竖排）", "[h]文本[/h]"
+   "offsetx", "横向偏移量（仅用于竖排）", "[offsetx=5]文本[/offsetx]"
+   "offsety", "纵向偏移量（仅用于竖排）", "[offsety=5]文本[/offsety]"
    "fontfamily", "字体名", "[fontname=Arial]文本[/fontname]"
    "fontsize", "文字大小", "[fontsize=32]文本[/fontsize]"
    "fontcolor", "文字颜色", "[fontcolor=#FF0000]文本[/fontcolor]"
@@ -287,4 +295,20 @@ ImageTrans可以使用BBCode来标记富文本格式，比如下图中运用的�
 批处理
 --------------
 
-以上对单个图片的操作都可以通过菜单-项目-批处理对所有图片进行操作。
+以上对单个图片的操作都可以通过菜单-项目-批处理对所有图片进行操作。可以通过自定义工作流功能一次性对所有图片执行所需的操作。
+
+工具栏
+-----------------------
+
+点击程序左侧工具栏按钮，可以切换不同的工具栏。
+
+目前支持以下工具栏：
+
+1. OCR。
+2. 多选。支持选中多个区域并进行对齐、删除、合并、统一字体等操作。
+3. 文字区域分割。
+4. 快速建框。
+5. 字体。
+6. 排序。支持检测分镜和在文字区域上显示序号。
+7. 原图相关。支持调整译文图层透明度和与原文区域进行对齐。
+8. 编辑。支持旋转、翻转等图像编辑操作。

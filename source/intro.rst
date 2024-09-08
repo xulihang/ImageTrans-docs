@@ -12,5 +12,7 @@ ImageTrans是一款图片文字转录、图片翻译软件。ImageTrans不同于
 * 设置字体样式
 * 针对漫画翻译设计的文字区域检测和文字抹除功能
 
+除了本文档，你也可以通过\ `官方网站 <https://www.basiccat.org/zh/imagetrans/>`_\ 了解更多软件的内容。
+
 
 

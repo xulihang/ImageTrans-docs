@@ -1,8 +1,6 @@
 软件设置
 ==================================================
 
-
-
 通用设置
 -----------
 
@@ -12,9 +10,9 @@
 +++++++++++++
 
 
-本工具的气泡检测支持调用基于Darknet Yolo或者TensorFlow Object Detection API训练的离线气泡检测模型，需要将模型放在软件的目录中并在菜单-文件-偏好设置-通用里启用离线气泡检测。
+本工具的气泡检测支持调用基于Darknet YOLO, YOLOv8或者TensorFlow Object Detection API训练的离线气泡检测模型，需要将模型放在软件的目录中并在菜单-文件-偏好设置-通用里启用离线气泡检测。
 
-现有的离线模型：\ `日漫气泡识别模型 <https://github.com/xulihang/ImageTrans-docs/issues/135>`_。
+可以在这里找到现有的离线模型和训练方法：`<https://github.com/xulihang/balloon-dataset>`_。
 
 此外也能使用百度EasyDL和微软Azure的目标检测服务。需要自行开通账号并训练。
 
@@ -34,16 +32,18 @@
 
 默认地址为：`<http://127.0.0.1:8082/classify>`_
 
-请运行以下仓库的代码： `<https://github.com/xulihang/text-image-classifier>`_。
+请运行以下仓库的代码：`<https://github.com/xulihang/text-image-classifier>`_。
 
 自然场景文字检测
 +++++++++++++++++++++++
 
-支持使用EAST和CRAFT自然场景文字检测方法进行文字检测。
+支持使用DB、EAST和CRAFT等自然场景文字检测方法进行文字检测。
 
 默认地址为：`<http://127.0.0.1:8080/detect>`_
 
-代码地址： `<https://github.com/xulihang/ImageTrans_SceneText_Detection>`_。
+项目1：`<https://github.com/xulihang/ImageTrans_plugins/tree/master/mangaTranslatorOCR>`_。
+
+项目2：`<https://github.com/xulihang/ImageTrans_SceneText_Detection>`_。
 
 
 API设置
@@ -85,3 +85,16 @@ OCR:
 
 
 文本编辑区域的字体也能在项目设置中修改。
+
+快捷键设置
+---------------
+
+所有菜单上存在的操作都可以设置快捷键以进行快速调用。
+
+此外还支持若干快捷键设定：
+
+1. 调整文字区域大小时按住SHIFT可以保持文字区域的比例。
+2. 移动文字区域时，按住SHIFT可以保持横坐标不变。按住SHIFT的同时再按住Z，可以保持纵坐标不变。
+3. 使用删除键可以直接删除选中的文字区域。
+4. 使用控制键或者花键可以进行多选操作。
+   
