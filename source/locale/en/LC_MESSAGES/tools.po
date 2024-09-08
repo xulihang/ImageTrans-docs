@@ -4,19 +4,18 @@
 # Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-
 msgid ""
 msgstr ""
 "Project-Id-Version: ImageTrans Documentation 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-04 14:28+0800\n"
+"POT-Creation-Date: 2024-09-08 14:36+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.1\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../source/tools.rst:2
 msgid "工具"
@@ -101,7 +100,6 @@ msgstr "filelistPath: a list of files to be processed, separated by newlines"
 
 
 #: ../../source/tools.rst:40
-
 msgid ""
 "可以搭配\\ `ImageTrans_Server "
 "<https://github.com/xulihang/ImageTrans_Server>`_\\ 提供在线服务"
@@ -119,7 +117,6 @@ msgstr "This tool allows other software to call ImageTrans to translate images."
 
 
 #: ../../source/tools.rst:48
-
 msgid ""
 "`ImageTrans Chrome插件 "
 "<https://github.com/xulihang/ImageTrans_chrome_extension>`_\\ 需要使用这一功能。"
@@ -129,6 +126,16 @@ msgstr "`ImageTrans Chrome Extension <https://github.com/xulihang/ImageTrans_chr
 #: ../../source/tools.rst:50
 msgid "该插件能用ImageTrans翻译网页中的图片，图片和处理结果会自动添加到ImageTrans当前的项目中。"
 msgstr "The extension can use ImageTrans to translate images on webpages Images and processing results will be automatically added to the current project of ImageTrans."
+
+
+#: ../../source/tools.rst:54
+msgid "目标检测标注数据管理器"
+msgstr "Object Detection Annotation Data Manager"
+
+
+#: ../../source/tools.rst:56
+msgid "该工具可以将项目数据以YOLO的数据格式导出或者导回。支持OBB格式。"
+msgstr "This tool can export or import project data in YOLO data format. Supports OBB format."
 
 
 #~ msgid "截取屏幕并OCR和翻译，所得的结果可以保存到项目中。"

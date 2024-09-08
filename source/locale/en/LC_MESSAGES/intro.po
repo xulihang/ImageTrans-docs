@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ImageTrans Documentation 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-12 21:07+0800\n"
+"POT-Creation-Date: 2024-09-08 14:36+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.3\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../source/intro.rst:2
 msgid "简介"
@@ -61,5 +61,12 @@ msgstr "Text Styling"
 #: ../../source/intro.rst:13
 msgid "针对漫画翻译设计的文字区域检测和文字抹除功能"
 msgstr "Text area detection and text erasing designed for comic translation"
+
+
+#: ../../source/intro.rst:15
+msgid ""
+"除了本文档，你也可以通过\\ `官方网站 <https://www.basiccat.org/zh/imagetrans/>`_\\ "
+"了解更多软件的内容。"
+msgstr "In addition to this document, you can also learn more about the software through the `official website <https://www.basiccat.org/imagetrans/>`_."
 
 

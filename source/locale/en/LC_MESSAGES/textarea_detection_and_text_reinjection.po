@@ -4,19 +4,18 @@
 # Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-
 msgid ""
 msgstr ""
 "Project-Id-Version: ImageTrans Documentation 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-04 14:28+0800\n"
+"POT-Creation-Date: 2024-09-08 14:36+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.1\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../source/textarea_detection_and_text_reinjection.rst:2
 msgid "文字区域检测和译文回填"
@@ -34,8 +33,11 @@ msgstr "Text Area Detection"
 
 
 #: ../../source/textarea_detection_and_text_reinjection.rst:11
-msgid "ImageTrans支持四种文字检测方式：OCR提供的检测功能、基于深度学习目标检测的气泡检测功能、基于规则的启发式检测方法和自然场景文字检测方法。"
-msgstr "ImageTrans supports four text detection methods: text detection provided by OCR, balloons (bubbles) detection using deep learning object detection, rule-based heuristic detection method and natural scene text detection method."
+msgid ""
+"ImageTrans支持四种文字检测方式：OCR提供的检测功能、基于深度学习目标检测的气泡检测功能、基于规则的启发式检测方法和自然场景文字检测方法。更多可以看这篇博客：\\"
+" `为图片翻译选择合适的文字检测方法 <https://www.basiccat.org/zh/choose-a-suitable-text-"
+"detection-method-for-image-translation/>`_。"
+msgstr "ImageTrans supports four text detection methods: text detection provided by OCR, balloons (bubbles) detection using deep learning object detection, rule-based heuristic detection method and natural scene text detection method. For more information, please refer to this blog post: `Choose a Suitable Text Detection Method for Image Translation <https://www.basiccat.org/choose-a-suitable-text-detection-method-for-image-translation/>`_."
 
 
 #: ../../source/textarea_detection_and_text_reinjection.rst:13
@@ -84,7 +86,6 @@ msgstr "Because different comics have varous sizes, different text area detectio
 
 
 #: ../../source/textarea_detection_and_text_reinjection.rst:32
-
 msgid ""
 "文字区域检测的算法细节见此：`基于规则的漫画文字检测方法 <http://blog.xulihang.me/text-localization-"
 "for-comics/>`_。"
@@ -93,8 +94,8 @@ msgstr "The algorithm details of text area detection can be found here: `Rules-b
 
 #: ../../source/textarea_detection_and_text_reinjection.rst:34
 msgid ""
-"文字区域置信度获取是利用TensorFlow提供的脚本基于卷积神经网络预训练模型重新训练的，相关代码见此： "
-"`<https://github.com/xulihang/text-image-classifier>`_。"
+"文字区域置信度获取是利用TensorFlow提供的脚本基于卷积神经网络预训练模型重新训练的，相关代码见此：`<https://github.com/xulihang"
+"/text-image-classifier>`_。"
 msgstr "The confidence of text areas is obtained using a CNN model retrained using TensorFlow’s script. See the code here: `<https://github.com/xulihang/text-image-classifier>`_."
 
 
@@ -109,7 +110,6 @@ msgstr "Natural Scene Text Detection"
 
 
 #: ../../source/textarea_detection_and_text_reinjection.rst:41
-
 msgid "自然场景文字检测功能允许用户调用DB、EAST、CRAFT等开源自然场景文字检测方法，这类方法的准确率较高，并能检测倾斜文本，但一般需要花费较长的运行时间。"
 msgstr "The natural scene text detection allows users to call open source natural scene text detection methods such as DB, EAST and CRAFT, which have high accuracy and can detect tilted text. But it generally take a long time to produce the result."
 
@@ -167,7 +167,6 @@ msgstr "The following image shows the Mask Editor and the Text Remover, which ca
 
 
 #: ../../source/textarea_detection_and_text_reinjection.rst:67
-
 msgid ""
 "掩膜生成和图像修复支持调用插件以使用第三方的方法，现有的插件是\\ `Sickzil-machine "
 "<https://github.com/xulihang/ImageTrans_plugins>`_\\ 和\\ `Lama "
@@ -184,27 +183,44 @@ msgstr "Other cases:"
 msgid ""
 "如果存在无文字原图，可以通过\\ `无文字原图和纯文字图管理器 <https://github.com/xulihang/ImageTrans-"
 "docs/issues/199#issuecomment-1133639931>`_\\ 设置无文字原图，查看翻译时会直接使用原图。"
-msgstr "If a text-free original image exists, that text-free original image can be set through the `Textless Original Image and Pure-Text Image Manager <https://github.com/xulihang/ImageTrans-docs/issues/199 #issuecomment-1133639931>`_. The original image will be directly used when viewing the translated image."
+msgstr "If a text-free original image exists, that text-free original image can be set through the `Textless Original Image and Pure-Text Image Manager <https://github.com/xulihang/ImageTrans-docs/issues/199#issuecomment-1133639931>`_. The original image will be directly used when viewing the translated image."
 
 
-#: ../../source/textarea_detection_and_text_reinjection.rst:76
+#: ../../source/textarea_detection_and_text_reinjection.rst:75
+msgid ""
+"更多可以看这篇博客：\\ `ImageTrans图片文字抹除详解 <https://www.basiccat.org/zh/details-"
+"about-image-text-removal-using-imagetrans/>`_。"
+msgstr "For more information, please refer to this blog post: `Details about Image Text Removal using ImageTrans <https://www.basiccat.org/details-about-image-text-removal-using-imagetrans/>`_."
+
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:78
 msgid "译文放置"
 msgstr "Translation Replacement"
 
 
-#: ../../source/textarea_detection_and_text_reinjection.rst:78
+#: ../../source/textarea_detection_and_text_reinjection.rst:80
 msgid "根据文本框的大小和位置放置译文，支持自动根据文本框的大小调整译文大小，可以在项目设置里进行设置。"
 msgstr "You can adjust the location and size of the target text boxes. The font size will be automatically adjusted. You can set this in the project settings."
 
 
-#: ../../source/textarea_detection_and_text_reinjection.rst:82
+#: ../../source/textarea_detection_and_text_reinjection.rst:84
 msgid "颜色检测"
 msgstr "Color Detection"
 
 
-#: ../../source/textarea_detection_and_text_reinjection.rst:84
+#: ../../source/textarea_detection_and_text_reinjection.rst:86
 msgid "本工具能较粗略地自动检测背景颜色和文字颜色，点击编辑-颜色操作进行相关操作。"
 msgstr "This tool can automatically detect the background color and text color roughly. Click Edit->Color operations to do the detection."
+
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:89
+msgid "旋转检测"
+msgstr "Rotation Detection"
+
+
+#: ../../source/textarea_detection_and_text_reinjection.rst:91
+msgid "本工具支持检测旋转的文字的角度，可以通过编辑-文字区域操作菜单或者自定义工作流进行操作。"
+msgstr "This tool supports detecting the angle of rotated text, which can be operated through the Edit->Text Area Operation menu or custom workflow."
 
 
 #~ msgid "译文回填分为两步，一步是原文抹除，一步是译文的放置。"
@@ -221,4 +237,13 @@ msgstr "This tool can automatically detect the background color and text color r
 
 #~ msgid "下图是掩膜编辑器："
 #~ msgstr ""
+
+#~ msgid "ImageTrans支持四种文字检测方式：OCR提供的检测功能、基于深度学习目标检测的气泡检测功能、基于规则的启发式检测方法和自然场景文字检测方法。"
+#~ msgstr ""
+#~ "ImageTrans supports four text detection "
+#~ "methods: text detection provided by OCR,"
+#~ " balloons (bubbles) detection using deep"
+#~ " learning object detection, rule-based "
+#~ "heuristic detection method and natural "
+#~ "scene text detection method."
 

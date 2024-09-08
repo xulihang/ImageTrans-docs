@@ -4,111 +4,109 @@
 # Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-
 msgid ""
 msgstr ""
 "Project-Id-Version: ImageTrans Documentation 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-04 14:28+0800\n"
+"POT-Creation-Date: 2024-09-08 14:36+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.1\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../source/settings.rst:2
 msgid "软件设置"
 msgstr "Settings"
 
 
-#: ../../source/settings.rst:7
+#: ../../source/settings.rst:5
 msgid "通用设置"
 msgstr "General settings"
 
 
-#: ../../source/settings.rst:12
+#: ../../source/settings.rst:10
 msgid "气泡检测"
 msgstr "Balloon Detection"
 
 
-#: ../../source/settings.rst:15
-
+#: ../../source/settings.rst:13
 msgid ""
-"本工具的气泡检测支持调用基于Darknet Yolo或者TensorFlow Object Detection "
+"本工具的气泡检测支持调用基于Darknet YOLO, YOLOv8或者TensorFlow Object Detection "
 "API训练的离线气泡检测模型，需要将模型放在软件的目录中并在菜单-文件-偏好设置-通用里启用离线气泡检测。"
-msgstr "The tool’s balloon (bubble) detection uses offline balloon detection models trained by Darknet Yolo or TensorFlow Object Detection API."
+msgstr "The tool’s balloon (bubble) detection uses offline balloon detection models trained by Darknet YOLO, YOLOv8 or TensorFlow Object Detection API."
+
+
+#: ../../source/settings.rst:15
+msgid "可以在这里找到现有的离线模型和训练方法：`<https://github.com/xulihang/balloon-dataset>`_。"
+msgstr "You can find existing offline models and training methods here: `<https://github.com/xulihang/balloon-dataset>`_."
 
 
 #: ../../source/settings.rst:17
-
-msgid ""
-"现有的离线模型：\\ `日漫气泡识别模型 <https://github.com/xulihang/ImageTrans-"
-"docs/issues/135>`_。"
-msgstr "Existing offline model: `balloon detection model for manga <https://github.com/xulihang/ImageTrans-docs/issues/135>`_."
-
-
-#: ../../source/settings.rst:19
-
 msgid "此外也能使用百度EasyDL和微软Azure的目标检测服务。需要自行开通账号并训练。"
 msgstr "It can also uses object detection services provided by Baidu EasyDL and Azure.  You need to create your own account and train your own model."
 
 
-#: ../../source/settings.rst:21
+#: ../../source/settings.rst:19
 msgid "推荐的标注方法："
 msgstr "Recommended labeling methods:"
 
 
-#: ../../source/settings.rst:23
+#: ../../source/settings.rst:21
 msgid "选中所有气泡中的文字，选框尽量贴合文字。"
 msgstr "Box text areas in all balloons. Let the box fits the text as closely as possible."
 
 
-#: ../../source/settings.rst:27
-
+#: ../../source/settings.rst:25
 msgid "发布模型后，在菜单-文件-偏好设置-API里设置发布了的URL，同时还需要填写对应的API。"
 msgstr "After the model is published, you can set the URL through File-Preferences-API setting. The corresponding API key is also required."
 
 
-#: ../../source/settings.rst:31
+#: ../../source/settings.rst:29
 msgid "文字图像识别"
 msgstr "Text Image Recognition"
 
 
-#: ../../source/settings.rst:33
+#: ../../source/settings.rst:31
 msgid "软件默认调用本地模型识别文字和非文字区域。此外也可以调用API服务。"
 msgstr "By default, the software uses the local model to recognize text and non text areas. You can also call an API service."
 
 
-#: ../../source/settings.rst:35
+#: ../../source/settings.rst:33
 msgid "默认地址为：`<http://127.0.0.1:8082/classify>`_"
 msgstr "The default address is: `<http://127.0.0.1:8082/classify>`_"
 
 
-#: ../../source/settings.rst:37
-msgid "请运行以下仓库的代码： `<https://github.com/xulihang/text-image-classifier>`_。"
-msgstr "Please run the code in this repository:  `<https://github.com/xulihang/text-image-classifier>`_."
+#: ../../source/settings.rst:35
+msgid "请运行以下仓库的代码：`<https://github.com/xulihang/text-image-classifier>`_。"
+msgstr "Please run the code in the following repository: `<https://github.com/xulihang/text-image-classifier>`_."
 
 
-#: ../../source/settings.rst:40
+#: ../../source/settings.rst:38
 msgid "自然场景文字检测"
 msgstr "Natural Scene Text Detection"
 
 
+#: ../../source/settings.rst:40
+msgid "支持使用DB、EAST和CRAFT等自然场景文字检测方法进行文字检测。"
+msgstr "DB, EAST and CRAFT natural scene text detection methods are supported."
+
+
 #: ../../source/settings.rst:42
-msgid "支持使用EAST和CRAFT自然场景文字检测方法进行文字检测。"
-msgstr "EAST and CRAFT natural scene text detection methods are supported."
-
-
-#: ../../source/settings.rst:44
 msgid "默认地址为：`<http://127.0.0.1:8080/detect>`_"
 msgstr "The default address is: `<http://127.0.0.1:8080/detect>`_"
 
 
+#: ../../source/settings.rst:44
+msgid "项目1：`<https://github.com/xulihang/ImageTrans_plugins/tree/master/mangaTranslatorOCR>`_。"
+msgstr "Project 1: `<https://github.com/xulihang/ImageTrans_plugins/tree/master/mangaTranslatorOCR>`_."
+
+
 #: ../../source/settings.rst:46
-msgid "代码地址： `<https://github.com/xulihang/ImageTrans_SceneText_Detection>`_。"
-msgstr "Code repository: `<https://github.com/xulihang/ImageTrans_SceneText_Detection>`_."
+msgid "项目2：`<https://github.com/xulihang/ImageTrans_SceneText_Detection>`_。"
+msgstr "Project 2: `<https://github.com/xulihang/ImageTrans_SceneText_Detection>`_."
 
 
 #: ../../source/settings.rst:50
@@ -198,6 +196,41 @@ msgstr "For example, the following CSS can control the text size of the text edi
 #: ../../source/settings.rst:87
 msgid "文本编辑区域的字体也能在项目设置中修改。"
 msgstr "The font of the text editing areas can also be configured in project settings."
+
+
+#: ../../source/settings.rst:90
+msgid "快捷键设置"
+msgstr "Shortcut Settings"
+
+
+#: ../../source/settings.rst:92
+msgid "所有菜单上存在的操作都可以设置快捷键以进行快速调用。"
+msgstr "All operations on the menu can be set with shortcut keys for quick access."
+
+
+#: ../../source/settings.rst:94
+msgid "此外还支持若干快捷键设定："
+msgstr "In addition, it also supports several shortcut key settings:"
+
+
+#: ../../source/settings.rst:96
+msgid "调整文字区域大小时按住SHIFT可以保持文字区域的比例。"
+msgstr "When adjusting the size of the text area, holding SHIFT can maintain the proportion of the text area."
+
+
+#: ../../source/settings.rst:97
+msgid "移动文字区域时，按住SHIFT可以保持横坐标不变。按住SHIFT的同时再按住Z，可以保持纵坐标不变。"
+msgstr "When moving the text area, holding SHIFT can keep the horizontal coordinates unchanged. Hold SHIFT as well as Z to keep the vertical coordinates unchanged."
+
+
+#: ../../source/settings.rst:98
+msgid "使用删除键可以直接删除选中的文字区域。"
+msgstr "The delete key can be used to delete the selected text areas."
+
+
+#: ../../source/settings.rst:99
+msgid "使用控制键或者花键可以进行多选操作。"
+msgstr "Multiple selection operations can be performed holding the control key or the command key."
 
 
 #~ msgid "`搜狗 <https://deepi.sogou.com/>`_"

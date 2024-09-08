@@ -4,19 +4,18 @@
 # Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: ImageTrans Documentation 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-14 16:47+0800\n"
+"POT-Creation-Date: 2024-09-08 14:36+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.1\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../source/gettingstarted.rst:2
 msgid "快速入门"
@@ -35,7 +34,7 @@ msgstr "Full Version"
 
 #: ../../source/gettingstarted.rst:10
 msgid "Windows完整版解压到任意目录后运行ImageTrans.exe即可，Mac完整版打开dmg文件安装ImageTrans到应用目录即可。"
-msgstr "For Windows, unzip the full version to any folder and run ImageTrans.exe. For Mac, drag the app in dmg file to Application."
+msgstr "For Windows, unzip the full version to any folder and run ImageTrans.exe. For Mac, drag the app in the dmg file to Application."
 
 
 #: ../../source/gettingstarted.rst:13
@@ -45,25 +44,23 @@ msgstr "Cross Platform Version"
 
 #: ../../source/gettingstarted.rst:15
 msgid ""
-"下载zip压缩包，解压到任意目录，双击ImageTrans.jar或者命令行输入 ``java -jar ImageTrans.jar`` "
-"即可运行。"
+"下载zip压缩包，解压到任意目录，双击ImageTrans.jar或者命令行输入\\ ``java -jar ImageTrans.jar``\\"
+" 即可运行。"
 msgstr "Download ImageTrans's zip file, unzip it to any folder, double-click ImageTrans.jar or enter the command line ``java -jar ImageTrans.jar`` to run it."
 
 
 #: ../../source/gettingstarted.rst:17
 msgid ""
-"软件依赖JRE 1.8以上运行环境，请先下载安装。下载地址：1. `Liberica JRE 11.0.19 full version  "
-"<https://github.com/bell-sw/Liberica/releases/tag/11.0.19%2B7>`_ 2. "
-"`百度网盘（提取码：mhsy） <https://pan.baidu.com/s/1t0g6htstFge0h2dOS0aBog>`_"
-msgstr "The software depends on JRE 1.8+. Please download and install it first. Download: 1. `Liberica JRE 11.0.19 full version  <https://github.com/bell-sw/Liberica/releases/tag/11.0.19%2B7>`_ 2. `Baidu Netdisk (code: mhsy) <https://pan.baidu.com/s/1t0g6htstFge0h2dOS0aBog>`_"
+"软件依赖JRE 11以上运行环境，请先下载安装。下载地址：\\ `Liberica JRE 11.0.19 full version  "
+"<https://github.com/bell-sw/Liberica/releases/tag/11.0.19%2B7>`_"
+msgstr "The software depends on JRE 11+. Please download and install it first. Download link: `Liberica JRE 11.0.19 full version <https://github.com/bell-sw/Liberica/releases/tag/11.0.19%2B7>`_"
 
 
 #: ../../source/gettingstarted.rst:19
 msgid ""
-"软件依赖OpenCV，请根据系统下载运行库文件，解压后放在ImageTrans的目录下。下载地址：1. `GitHub "
-"<https://github.com/xulihang/ImageTrans-docs/releases/tag/opencv>`_, 2. "
-"`百度网盘 <https://pan.baidu.com/s/1D9EZMKqwgqQjdEjwYFkZQQ>`_"
-msgstr "ImageTrans also relies on OpenCV, please download the runtime file according to your system, unzip and put them under ImageTrans's folder. Download: 1. `GitHub <https://github.com/xulihang/ImageTrans-docs/releases/tag/opencv>`_, 2. `Baidu Netdisk <https://pan.baidu.com/s/1D9EZMKqwgqQjdEjwYFkZQQ>`_"
+"软件依赖OpenCV，请根据系统下载运行库文件，解压后放在ImageTrans的目录下。下载地址：\\ `GitHub "
+"<https://github.com/xulihang/ImageTrans-docs/releases/tag/opencv>`_"
+msgstr "ImageTrans also relies on OpenCV, please download the runtime file according to your system, unzip and put it under ImageTrans's folder. Download link: `GitHub <https://github.com/xulihang/ImageTrans-docs/releases/tag/opencv>`_"
 
 
 #: ../../source/gettingstarted.rst:22
@@ -110,10 +107,10 @@ msgstr "If you need to use Tesseract for OCR, please install it by yourself (`Li
 
 #: ../../source/gettingstarted.rst:38
 msgid ""
-"这里再提供一个Windows的绿色版本：`百度网盘（提取码：ktpt） "
-"<https://pan.baidu.com/s/1gJZyuntLetZEpFWI8XqkXA>`_。下载后将tesseract-"
-"ocr目录和ImageTrans放在一起。额外的语言包请放在 ``tesseract-ocr\\tessdata`` 目录下。"
-msgstr "Here is a Windows version for download: `Baidu Netdisk (code: ktpt) <https://pan.baidu.com/s/1gJZyuntLetZEpFWI8XqkXA>`_. Put the downloaded tesseract-ocr with ImageTrans. Put additional language data files under ``tesseract-ocr\\tessdata``."
+"这里再提供一个Windows的安装版本：\\ `UB-Mannheim Tesseract5 <https://github.com/UB-"
+"Mannheim/tesseract/releases/download/v5.4.0.20240606/tesseract-"
+"ocr-w64-setup-5.4.0.20240606.exe>`_。"
+msgstr "Here is an installer version for Windows: `UB-Mannheim Tesseract5 <https://github.com/UB-Mannheim/tesseract/releases/download/v5.4.0.20240606/tesseract-ocr-w64-setup-5.4.0.20240606.exe>`_."
 
 
 #: ../../source/gettingstarted.rst:40
@@ -126,12 +123,7 @@ msgid ""
 "Windows10自带OCR功能，但需要先安装所需语言。它和Azure、OCRSPACE的引擎其实是同一个。ImageTrans中这一OCR引擎的名字叫做WinRT，因为它是基于Windows的\\"
 " `Windows Runtime API <https://docs.microsoft.com/en-"
 "us/uwp/api/windows.media.ocr?view=winrt-20348>`_。"
-msgstr ""
-"Windows 10 comes with built-in OCR, but you need to install the language "
-"environment first. Actually, it has the same engine as Azure and "
-"OCRSPACE. This OCR engine in ImageTrans is called WinRT because it is "
-"based on the `Windows Runtime API <https://docs.microsoft.com/en-"
-"us/uwp/api/windows.media.ocr?view=winrt-20348>`_."
+msgstr "Windows 10 comes with built-in OCR, but you need to install the language environment first. Actually, it has the same engine as Azure and OCRSPACE. This OCR engine in ImageTrans is called WinRT because it is based on the `Windows Runtime API <https://docs.microsoft.com/en-us/uwp/api/windows.media.ocr?view=winrt-20348>`_."
 
 
 #: ../../source/gettingstarted.rst:44
@@ -143,7 +135,7 @@ msgstr "mangaOCR"
 msgid ""
 "该OCR能十分准确地识别日漫的文字。安装说明见此：\\ "
 "`<https://github.com/xulihang/ImageTrans_plugins/tree/master/mangaOCR>`_。"
-msgstr "This OCR can accurately recognize the text of manga. Installation instruction: `<https://github.com/xulihang/ImageTrans_plugins/tree/master/mangaOCR>`_."
+msgstr "This OCR can accurately recognize the text of manga. Installation instructions: `<https://github.com/xulihang/ImageTrans_plugins/tree/master/mangaOCR>`_."
 
 
 #: ../../source/gettingstarted.rst:48
@@ -191,14 +183,14 @@ msgid ""
 "nlp.github.io/OPUS-CAT/install>`_\\ 下载安装后使用\\ `OPUS-CAT机器翻译插件 "
 "<https://github.com/xulihang/ImageTrans-"
 "docs/issues/177#issuecomment-1070305647>`_\\ 调用。"
-msgstr "OPUS-CAT. Opus-CAT is the offline machine translation engine by Helsinki Natural Language Processing Group. Download and install it from `here <https://helsinki-nlp.github.io/OPUS-CAT/install>`_ and install the OPUS-CAT machine translation `plug-in <https://github.com/xulihang/ImageTrans-docs/issues/177#issuecomment-1070305647>`_ to use it."
+msgstr "OPUS-CAT. Opus-CAT is the offline machine translation engine by the Helsinki Natural Language Processing Group. Download and install it from `here <https://helsinki-nlp.github.io/OPUS-CAT/install>`_ and install the OPUS-CAT machine translation `plug-in <https://github.com/xulihang/ImageTrans-docs/issues/177#issuecomment-1070305647>`_ to use it."
 
 
 #: ../../source/gettingstarted.rst:63
 msgid ""
 "eztrans xp。这是一个日韩翻译软件。使用方法见\\ `issue29 <https://github.com/xulihang"
 "/ImageTrans-docs/issues/29#issuecomment-818754544>`_。"
-msgstr "eztrans xp. This is a Japanese-Korean translation software. Check out `issue29  <https://github.com/xulihang/ImageTrans-docs/issues/29#issuecomment -818754544>`_ for its usage.<https://github.com/xulihang/ImageTrans-docs/issues/29#issuecomment-818754544>"
+msgstr "eztrans xp. This is a Japanese-Korean translation software. Check out `issue29  <https://github.com/xulihang/ImageTrans-docs/issues/29#issuecomment-818754544>`_ for its usage."
 
 
 #: ../../source/gettingstarted.rst:67
@@ -208,12 +200,12 @@ msgstr "Verification"
 
 #: ../../source/gettingstarted.rst:69
 msgid "运行ImageTrans时，会显示验证器，需要填入购买时填写的email和订单号。订单号可以在订单页面中找到。"
-msgstr "When you start ImageTrans, a validator will show up. You need to verify with your the email and order number.  The order number can be found in the purchase page."
+msgstr "When you start ImageTrans, a validator will show up. You need to verify with your email and order number.  The order number can be found on the purchase page."
 
 
 #: ../../source/gettingstarted.rst:73
 msgid "一个email可以在三台设备上使用，要更换设备则需要使用邮箱进行重置。"
-msgstr "Each email can be used for verification on at most three devices. If you want to use it on the fourth device, you have to reset with your email."
+msgstr "Each email can be used for verification on at most three devices. If you want to use it on the fourth device, you have to reset it with your email."
 
 
 #: ../../source/gettingstarted.rst:79
@@ -233,12 +225,12 @@ msgstr "Import Pictures"
 
 #: ../../source/gettingstarted.rst:89
 msgid "菜单栏点击文件-导入图片文件夹，选择图片存在的位置。该操作会读取该文件夹下所有的子目录并导入存在的jpg、png文件。"
-msgstr "Click File->Import pictures (from a folder) and select in which folder the picture exists to import. It will read all the subfolders and import existing jpg, png files."
+msgstr "Click File->Import pictures (from a folder) and select in which folder the picture exists to import. It will read all the subfolders and import existing jpg and png files."
 
 
 #: ../../source/gettingstarted.rst:93
 msgid "或者用右键菜单-粘贴图片的方式添加单张图片。"
-msgstr "You can also use the context menu to paste a image."
+msgstr "You can also use the context menu to paste an image."
 
 
 #: ../../source/gettingstarted.rst:95
@@ -253,7 +245,7 @@ msgstr "Transcription"
 
 #: ../../source/gettingstarted.rst:100
 msgid "工具支持框选文字区域并识别。提供手动框选和四种自动框选，并支持精细调整文本框。"
-msgstr "You can mark text areas in boxes and get their text. The tool supports manual selection and four automatic selection. Further adjustment is also supported."
+msgstr "You can mark text areas in boxes and get their text. The tool supports manual selection and four automatic selection methods. Further adjustment is also supported."
 
 
 #: ../../source/gettingstarted.rst:103
@@ -288,7 +280,7 @@ msgstr "Detect Text Areas and Recognize Text"
 
 #: ../../source/gettingstarted.rst:123
 msgid "选择语言和OCR引擎，点击菜单-编辑-自动识别文字，可以自动检测文字区域并转录。其中有道和谷歌是按段落识别，其它引擎是按行识别，可以通过右侧编辑区域的合并左右区域和合并上下区域进行合并。"
-msgstr "Select the language and an OCR engine, click Edit->Detect text areas and recognize text. Youdou and Google detect in paragragh level and other engines detect text lines."
+msgstr "Select the language and an OCR engine, click Edit->Detect text areas and recognize text. Youdou and Google detect in paragraph level and other engines detect text lines."
 
 
 #: ../../source/gettingstarted.rst:128
@@ -325,7 +317,7 @@ msgstr "Sort"
 
 #: ../../source/gettingstarted.rst:144
 msgid "支持根据坐标信息对文字区域进行排序。"
-msgstr "Sort text areas based on coordinate."
+msgstr "Sort text areas based on coordinates."
 
 
 #: ../../source/gettingstarted.rst:148
@@ -372,12 +364,12 @@ msgstr "Document for translation. Export source text and target text to a docx, 
 
 #: ../../source/gettingstarted.rst:162
 msgid "网页，将项目导出为网页，可供局域网内的手机阅读，支持语音朗读和按分镜阅读"
-msgstr "Webpage. Export the project as a web page for reading on mobile phones in a local network. It supports text to speech and reading by panels."
+msgstr "Webpage. Export the project as a web page for reading on mobile phones in a local network. It supports text-to-speech and reading by panels."
 
 
 #: ../../source/gettingstarted.rst:163
-msgid "图像PDF，将项目导出为PDF"
-msgstr "Raster PDF. Export the project as PDF."
+msgid "图像PDF，将项目导出为PDF，支持添加可搜索的文字层"
+msgstr "Raster PDF. Export the project as PDF. Searchable text layers can be added."
 
 
 #: ../../source/gettingstarted.rst:164
@@ -385,167 +377,177 @@ msgid "TMX，导出原文译文为翻译记忆文件"
 msgstr "TMX. Export the source text and the target text as a translation memory file."
 
 
-#: ../../source/gettingstarted.rst:167
+#: ../../source/gettingstarted.rst:165
+msgid "分镜，导出分镜图像为单张图片、条漫或者PDF"
+msgstr "Panel. Export panels as single image files, webtoon files, or PDF files"
+
+
+#: ../../source/gettingstarted.rst:168
 msgid "翻译"
 msgstr "Translation"
 
 
-#: ../../source/gettingstarted.rst:169
+#: ../../source/gettingstarted.rst:170
 msgid "在译文区域输入译文并点击保存可以完成一个文字区域的翻译。"
 msgstr "Enter the target text in the translation area and click Save to complete the translation of a text area."
 
 
-#: ../../source/gettingstarted.rst:171
+#: ../../source/gettingstarted.rst:172
 msgid "可以将翻译导出为docx、txt或者XLIFF文档供外部人员翻译，之后再通过菜单-导回翻译进行导回。"
-msgstr "Translations can be exported as docx , txt or XLIFF documents for external translation, and then import back through File->Import translation."
+msgstr "Translations can be exported as docx , txt or XLIFF documents for external translation, and then imported back through File->Import translation."
 
 
-#: ../../source/gettingstarted.rst:175
+#: ../../source/gettingstarted.rst:176
 msgid "计算机辅助翻译软件BasicCAT支持直接操作ImageTrans的项目文件进行翻译。"
 msgstr "BasicCAT, a computer-aided translation software, supports direct operation of ImageTrans's project files for translation."
 
 
-#: ../../source/gettingstarted.rst:178
+#: ../../source/gettingstarted.rst:179
 msgid "翻译记忆、机器翻译和术语管理"
 msgstr "Translation memory, machine translation and terminology management"
 
 
-#: ../../source/gettingstarted.rst:180
+#: ../../source/gettingstarted.rst:181
 msgid "切换右侧的操作区到辅助翻译页面，可以使用翻译记忆、机器翻译和术语管理这三个功能。机器翻译需要在偏好设置里设置API，并进行启用。另外还需要设置项目的语言，通过项目-设置-选择语言对进行设置。"
-msgstr "Switch the tab page on the right to Translation Assistant page to use translation memory, machine translation, and terminology management. You need to set up APIs and enable them to use machine translation. You also need to set the language pair of the project, which can be done through Project->Settings->Select language pair."
+msgstr "Switch the tab page on the right to the translation assistant page to use translation memory, machine translation, and terminology management. You need to set up APIs and enable them to use machine translation. You also need to set the language pair of the project, which can be done through Project->Settings->Select language pair."
 
 
-#: ../../source/gettingstarted.rst:185
+#: ../../source/gettingstarted.rst:186
 msgid "预翻译"
 msgstr "Pre-translation"
 
 
-#: ../../source/gettingstarted.rst:187
-msgid "点击菜单-项目-批处理-预翻译，可以使用翻译记忆或者机器翻译进行批量翻译。当前只支持机器翻译。"
-msgstr "Click Project->Batch->Pre-translation to use translation memory or machine translation to pre-translate. Only machine translation is currently supported."
+#: ../../source/gettingstarted.rst:188
+msgid "点击菜单-项目-批处理-预翻译，可以使用翻译记忆或者机器翻译进行批量翻译。"
+msgstr "Click Project->Batch->Pre-translation to use translation memory or machine translation to pre-translate."
 
 
-#: ../../source/gettingstarted.rst:193
+#: ../../source/gettingstarted.rst:194
 msgid "查看翻译"
 msgstr "Check Translated"
 
 
-#: ../../source/gettingstarted.rst:195
+#: ../../source/gettingstarted.rst:196
 msgid "勾选左下角的查看翻译，可以查看翻译后的图片。精确模式会生成文字掩膜并修复背景，非精确模式则会用背景颜色进行遮盖。"
 msgstr "Check Translated in the lower-left corner to see the translated image. The precision mode will detect text and reconstruct the background. The imprecision mode will just cover the area with the background color."
 
 
-#: ../../source/gettingstarted.rst:199
+#: ../../source/gettingstarted.rst:200
 msgid "在查看翻译状态下勾选排版模式，译文区域将被框出，并支持调整位置和修改样式。"
 msgstr "When Typesetting mode is checked with Translated checked, target text areas will be boxed out. You can readjust their size and location."
 
 
-#: ../../source/gettingstarted.rst:205
+#: ../../source/gettingstarted.rst:206
 msgid "生成成品图"
 msgstr "Generate the Translated Picture"
 
 
-#: ../../source/gettingstarted.rst:207
-msgid "首先将图片比例调整为100%，之后点击查看翻译，得到成品图。点击文件-导出当前图片为-JPG，结果将输出在对应图片的文件夹的out文件夹中。另一选项ORA支持将文件导出为多层图像格式ORA，该格式能保存图层信息，供PS、Gimp和Krita等图像编辑软件编辑。"
-msgstr "First switch the image scale to 100%, and then check Translated to get the translated picture. Click File->Export the current picture to->JPG, and the result will be exported to the out folder in the picture folder. Another option, ORA, supports exporting files to multi-layer image format ORA, which holds layer information for image editing software such as PS, GIMP, and Krita."
+#: ../../source/gettingstarted.rst:208
+msgid "点击文件-导出当前图片为-JPG，结果将输出在对应图片的文件夹的out文件夹中。选项ORA支持将文件导出为多层图像格式ORA，该格式能保存图层信息，供PS、Gimp和Krita等图像编辑软件编辑。"
+msgstr "Click File->Export the current picture to->JPG, and the result will be exported to the out folder in the picture folder. Another option, ORA, supports exporting files to multi-layer image format ORA, which holds layer information for image editing software such as PS, GIMP, and Krita."
 
 
-#: ../../source/gettingstarted.rst:209
+#: ../../source/gettingstarted.rst:210
 msgid "除此以外，ImageTrans可支持导出PSD。"
 msgstr "In addition, ImageTrans supports exporting as PSDs."
 
 
 #: ../../source/gettingstarted.rst:212
+msgid "如果要生成全部图片的成品图，需要通过项目-批处理-导出所有图片的成品图进行操作。"
+msgstr "If you want to generate translated images for all, you need to use this menu item: Project->Batch->Generate translated images for all."
+
+
+#: ../../source/gettingstarted.rst:215
 msgid "设置文字样式"
 msgstr "Style Text"
 
 
-#: ../../source/gettingstarted.rst:214
-msgid "设置文字样式主要有两个作用，一个是在ImageTrans中使用，一个是用于导出PSD时设置字体。"
-msgstr "Setting text styles has effects in two processes: see translated result in ImageTrans and export as PSDs."
-
-
 #: ../../source/gettingstarted.rst:217
+msgid "设置文字样式主要有两个作用，一个是在ImageTrans中使用，一个是用于导出PSD时设置字体。"
+msgstr "Setting text styles has effects in two processes: see the translated result in ImageTrans and export as PSDs."
+
+
+#: ../../source/gettingstarted.rst:220
 msgid "点击菜单-项目-设置-字体样式可以设置全局样式，设置选项包括使用的字体、文字大小、文字方向、行距、对齐方式、旋转角度、描边等等。"
 msgstr "Click Project->Settings->Font Style to set the font name, font size, direction, leading, alignment, rotation, stroke and so on."
 
 
-#: ../../source/gettingstarted.rst:221
-msgid "如果要修改某个样式，请点击该样式以加载设置，修改后点击添加，然后删去原来的样式。排在第一的样式是默认样式。在样式上方右键可以执行排序和删除操作，在列表的空白处右键可以选择从其它项目导入样式。"
-msgstr "If you want to modify a style, click the style to load the settings and then click Add when the setting is done. Remember to delete the original style. The first style will be the default style. You can right-click above the style to sort and delete it, and right-click in the blank space of the list to import styles from another project."
+#: ../../source/gettingstarted.rst:224
+msgid "排在第一的样式是默认样式。在样式上方右键可以执行排序和删除操作，在列表的空白处右键可以选择从其它项目导入样式。"
+msgstr "The first style will be the default style. You can right-click above the style to sort and delete it, and right-click in the blank space of the list to import styles from another project."
 
 
-#: ../../source/gettingstarted.rst:223
+#: ../../source/gettingstarted.rst:226
 msgid "设置全局样式后可以给文字区域指定使用哪个样式。"
 msgstr "After setting the global style, you can specify which style to use for the text area."
 
 
-#: ../../source/gettingstarted.rst:227
+#: ../../source/gettingstarted.rst:230
 msgid "另外也支持设置本地样式。本地样式的优先级大于全局样式。"
 msgstr "You can also set up local styles. The local style has a higher priority than the global style."
 
 
-#: ../../source/gettingstarted.rst:229
+#: ../../source/gettingstarted.rst:232
 msgid "点击左侧的字体按钮以启用字体设置工具栏，可以便捷地设置本地样式。"
 msgstr "Click the Font button on the left to enable the font settings toolbar, which makes it easy to set local styles."
 
 
-#: ../../source/gettingstarted.rst:233
+#: ../../source/gettingstarted.rst:236
 msgid "也可以通过文字区域列表上方的字体设置进行设置。它有一个专门的界面，能设置描边、旋转、是否启用本地样式。它能调出全局字体样式的设置界面进行更详细的设置（会读取添加在末尾的样式为本地字体样式）。"
-msgstr "It can also be set through the font setting button above the text area list. It has a dedicated interface where you can set stroke, rotation, and whether to enable the local style. It can bring up the global font style setup interface for more detailed setup (reads the style added at the end as local font style)."
+msgstr "It can also be set through the font setting button above the text area list. It has a dedicated interface where you can set stroke, rotation, and whether to enable the local style. It can bring up the global font style setup interface for a more detailed setup (reads the style added at the end as local font style)."
 
 
-#: ../../source/gettingstarted.rst:238
+#: ../../source/gettingstarted.rst:241
 msgid "点击左侧的多选按钮以启动多选工具栏，可以调整多个文本框的位置并统一其字体样式。"
 msgstr "Click the Selection button on the left to enable the multi-selection toolbar. You can adjust the position of multiple text boxes and unify their font styles."
 
 
-#: ../../source/gettingstarted.rst:244
+#: ../../source/gettingstarted.rst:247
 msgid "获取Photoshop用字体名"
 msgstr "Get the font name for Photoshop"
 
 
-#: ../../source/gettingstarted.rst:246
+#: ../../source/gettingstarted.rst:249
 msgid "因为Photoshop需要的字体名比较特殊，需要从PS中获得。方法是在PS中新建一张图片，建立一个文本框，设置所需字体，并完成文字编辑操作，是文本框处于非编辑状态。之后在ImageTrans中点击读取即可。非Windows系统需要使用readFont.jsx脚本。"
 msgstr "Because Photoshop requires a special font name, it needs to be obtained from PS. The way is to create a new picture in PS, create a text box, set the font you want, and complete the text editing operation, letting the text box in non-editing status. Then click Read in ImageTrans. Non-Windows systems have to use readFont.jsx scripts."
 
 
-#: ../../source/gettingstarted.rst:252
+#: ../../source/gettingstarted.rst:255
 msgid "自动调整字体大小"
 msgstr "Auto font resize"
 
 
-#: ../../source/gettingstarted.rst:254
+#: ../../source/gettingstarted.rst:257
 msgid "软件默认能根据文字区域大小自动调整字体大小。可以在项目设置中设置是否启用该功能以及最大、最小字体大小。"
 msgstr "By default, the software can automatically adjust the font size according to the size of the text area. You can set whether to enable this feature and the maximum and minimum font sizes in the project settings."
 
 
-#: ../../source/gettingstarted.rst:256
+#: ../../source/gettingstarted.rst:259
 msgid "字体大小的优先级是这样的："
 msgstr "The font size priority is as follows:"
 
 
-#: ../../source/gettingstarted.rst:258
+#: ../../source/gettingstarted.rst:261
 msgid "本地样式中的字体大小>自动调整字体大小>全局样式中的字体大小。"
 msgstr "Font size in local style > Auto font size > Font size in global style."
 
 
-#: ../../source/gettingstarted.rst:261
+#: ../../source/gettingstarted.rst:264
 msgid "富文本"
 msgstr "RichText"
 
 
-#: ../../source/gettingstarted.rst:263
+#: ../../source/gettingstarted.rst:266
 msgid "ImageTrans可以使用BBCode来标记富文本格式，比如下图中运用的粗体和斜体。"
 msgstr "ImageTrans can use BBCode to mark rich text formats, such as the bold and italic effects used in the following image."
 
 
-#: ../../source/gettingstarted.rst:267
+#: ../../source/gettingstarted.rst:270
 msgid "是使用这样的标记文本表示的： ``留[b][fi]性感[/fi][/b]的绿发，穿绿皮衣的那个人。`` 。"
-msgstr "It is represented using the following text with BBCode: ``留[b][fi]性感[/fi][/b]的绿发，穿绿皮衣的那个人。``."
+msgstr "It is represented using the following text with BBCode: ``留[b][fi]性感[/fi][/b]的绿发，穿绿皮衣的那个人。``\ ."
 
 
-#: ../../source/gettingstarted.rst:269
+#: ../../source/gettingstarted.rst:272
 msgid "下面是支持的标记说明："
 msgstr "Below is a table of supported tags:"
 
@@ -571,8 +573,8 @@ msgstr "b"
 
 
 #: ../../source/gettingstarted.rst:1
-msgid "粗体"
-msgstr "Bold"
+msgid "粗体（需要字体本身支持粗体）"
+msgstr "Bold (requires the font itself to support bold)"
 
 
 #: ../../source/gettingstarted.rst:1
@@ -586,8 +588,8 @@ msgstr "i"
 
 
 #: ../../source/gettingstarted.rst:1
-msgid "斜体"
-msgstr "Italic"
+msgid "斜体（需要字体本身支持斜体）"
+msgstr "Italic (requires the font itself to support italics)"
 
 
 #: ../../source/gettingstarted.rst:1
@@ -601,8 +603,8 @@ msgstr "fb"
 
 
 #: ../../source/gettingstarted.rst:1
-msgid "仿粗体"
-msgstr "Faux bold"
+msgid "仿粗体（仅用于横排）"
+msgstr "Faux bold (only for horizontal text)"
 
 
 #: ../../source/gettingstarted.rst:1
@@ -616,13 +618,88 @@ msgstr "fi"
 
 
 #: ../../source/gettingstarted.rst:1
-msgid "仿斜体"
-msgstr "Faux italic"
+msgid "仿斜体（仅用于横排）"
+msgstr "Faux italic (only for horizontal text)"
 
 
 #: ../../source/gettingstarted.rst:1
-msgid "[fi]文本[/fi]"
-msgstr "[fi]text[/fi]"
+msgid "[fi]文本[/fi] 或者 [fi=2,2,2]文本[/fi] 2,2,2分别代表倾斜程度、纵坐标偏移量和高度偏移量"
+msgstr "[fi]text[/fi] or [fi=2,2,2]text[/fi] The three values respectively represent the degree of inclination, vertical offset, and height offset"
+
+
+#: ../../source/gettingstarted.rst:1
+msgid "u"
+msgstr "u"
+
+
+#: ../../source/gettingstarted.rst:1
+msgid "下划线（仅用于横排）"
+msgstr "Underline (only for horizontal text)"
+
+
+#: ../../source/gettingstarted.rst:1
+msgid "[u]文本[/u]"
+msgstr "[u]text[/u]"
+
+
+#: ../../source/gettingstarted.rst:1
+msgid "s"
+msgstr "s"
+
+
+#: ../../source/gettingstarted.rst:1
+msgid "删除线（仅用于横排）"
+msgstr "Strikethrough (only for horizontal text)"
+
+
+#: ../../source/gettingstarted.rst:1
+msgid "[s]文本[/s]"
+msgstr "[s]text[/s]"
+
+
+#: ../../source/gettingstarted.rst:1
+msgid "h"
+msgstr "h"
+
+
+#: ../../source/gettingstarted.rst:1
+msgid "竖排内横排（仅用于竖排）"
+msgstr "Horizontal within vertical (only for vertical text)"
+
+
+#: ../../source/gettingstarted.rst:1
+msgid "[h]文本[/h]"
+msgstr "[h]text[/h]"
+
+
+#: ../../source/gettingstarted.rst:1
+msgid "offsetx"
+msgstr "offsetx"
+
+
+#: ../../source/gettingstarted.rst:1
+msgid "横向偏移量（仅用于竖排）"
+msgstr "Horizontal offset (only for vertical text)"
+
+
+#: ../../source/gettingstarted.rst:1
+msgid "[offsetx=5]文本[/offsetx]"
+msgstr "[offsetx=5]text[/offsetx]"
+
+
+#: ../../source/gettingstarted.rst:1
+msgid "offsety"
+msgstr "offsety"
+
+
+#: ../../source/gettingstarted.rst:1
+msgid "纵向偏移量（仅用于竖排）"
+msgstr "Vertical offset (only for vertical text)"
+
+
+#: ../../source/gettingstarted.rst:1
+msgid "[offsety=5]文本[/offsety]"
+msgstr "[offsety=5]text[/offsety]"
 
 
 #: ../../source/gettingstarted.rst:1
@@ -670,19 +747,74 @@ msgid "[fontcolor=#FF0000]文本[/fontcolor]"
 msgstr "[fontcolor=#FF0000]text[/fontcolor]"
 
 
-#: ../../source/gettingstarted.rst:283
+#: ../../source/gettingstarted.rst:291
 msgid "点编辑区域右侧的按钮R可以启用富文本编辑器，便于快速插入对应的BBCode代码。"
 msgstr "You can tap the button R to the right of the editing area to enable the rich text editor for quick insertion of the corresponding BBCode."
 
 
-#: ../../source/gettingstarted.rst:288
+#: ../../source/gettingstarted.rst:296
 msgid "批处理"
 msgstr "Batch"
 
 
-#: ../../source/gettingstarted.rst:290
-msgid "以上对单个图片的操作都可以通过菜单-项目-批处理对所有图片进行操作。"
-msgstr "All of the above operations on a single picture can be perforemd in batch through Project->Batch."
+#: ../../source/gettingstarted.rst:298
+msgid "以上对单个图片的操作都可以通过菜单-项目-批处理对所有图片进行操作。可以通过自定义工作流功能一次性对所有图片执行所需的操作。"
+msgstr "All of the above operations on a single picture can be performed in batch through Project->Batch. You can perform selected operations on all images at once through the custom workflow function."
+
+
+#: ../../source/gettingstarted.rst:301
+msgid "工具栏"
+msgstr "Toolbar"
+
+
+#: ../../source/gettingstarted.rst:303
+msgid "点击程序左侧工具栏按钮，可以切换不同的工具栏。"
+msgstr "Click the toolbar buttons on the left side of the program to switch between different toolbars."
+
+
+#: ../../source/gettingstarted.rst:305
+msgid "目前支持以下工具栏："
+msgstr "Currently, the following toolbars are supported:"
+
+
+#: ../../source/gettingstarted.rst:307
+msgid "OCR。"
+msgstr "OCR."
+
+
+#: ../../source/gettingstarted.rst:308
+msgid "多选。支持选中多个区域并进行对齐、删除、合并、统一字体等操作。"
+msgstr "Multiple selection. It can select multiple text areas and perform operations such as aligning, deleting, merging, and unifying fonts."
+
+
+#: ../../source/gettingstarted.rst:309
+msgid "文字区域分割。"
+msgstr "Text area cutting."
+
+
+#: ../../source/gettingstarted.rst:310
+msgid "快速建框。"
+msgstr "Quick creation of text boxes by dragging."
+
+
+#: ../../source/gettingstarted.rst:311
+msgid "字体。"
+msgstr "Font."
+
+
+#: ../../source/gettingstarted.rst:312
+msgid "排序。支持检测分镜和在文字区域上显示序号。"
+msgstr "Sort. It can detect panels and display the ranking numbers on text areas."
+
+
+#: ../../source/gettingstarted.rst:313
+msgid "原图相关。支持调整译文图层透明度和与原文区域进行对齐。"
+msgstr "Source image related. It can adjust the transparency of the translation layer and align text areas with the original text areas."
+
+
+#: ../../source/gettingstarted.rst:314
+msgid "编辑。支持旋转、翻转等图像编辑操作。"
+msgstr "Edit. It can rotate or flip images."
 
 
 #~ msgid ""
@@ -767,4 +899,35 @@ msgstr "All of the above operations on a single picture can be perforemd in batc
 
 #~ msgid "网页-将项目导出为网页，可供局域网内的手机阅读，支持语音朗读和按分镜阅读"
 #~ msgstr ""
+
+#~ msgid ""
+#~ "这里再提供一个Windows的绿色版本：`百度网盘（提取码：ktpt） "
+#~ "<https://pan.baidu.com/s/1gJZyuntLetZEpFWI8XqkXA>`_。下载后将tesseract-"
+#~ "ocr目录和ImageTrans放在一起。额外的语言包请放在 ``tesseract-ocr\\tessdata``"
+#~ " 目录下。"
+#~ msgstr ""
+#~ "Here is a Windows version for "
+#~ "download: `Baidu Netdisk (code: ktpt) "
+#~ "<https://pan.baidu.com/s/1gJZyuntLetZEpFWI8XqkXA>`_. Put "
+#~ "the downloaded tesseract-ocr with "
+#~ "ImageTrans. Put additional language data "
+#~ "files under ``tesseract-ocr\\tessdata``."
+
+#~ msgid "图像PDF，将项目导出为PDF"
+#~ msgstr "Raster PDF. Export the project as PDF."
+
+#~ msgid "粗体"
+#~ msgstr "Bold"
+
+#~ msgid "斜体"
+#~ msgstr "Italic"
+
+#~ msgid "仿粗体"
+#~ msgstr "Faux bold"
+
+#~ msgid "仿斜体"
+#~ msgstr "Faux italic"
+
+#~ msgid "[fi]文本[/fi]"
+#~ msgstr "[fi]text[/fi]"
 
