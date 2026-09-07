@@ -14,7 +14,7 @@ OCR与机器翻译的配置
 
 软件自带了PaddleOCR（rapid）、mangaOCR、manga image translator 48px CTC OCR、Windows 系统OCR、macOS Vision OCR等本地OCR，也支持使用百度、谷歌、有道、腾讯、阿里等在线OCR服务。在线OCR需要在偏好设置中设置API来使用。
 
-软件支持使用百度、谷歌、有道、腾讯、阿里等在线机器翻译服务。在线机器翻译亦需要在偏好设置里设置API来使用。
+软件支持使用百度、谷歌、有道、腾讯、阿里、DeepL等在线机器翻译服务。在线机器翻译亦需要在偏好设置里设置API来使用。
 
 软件默认提供百度翻译和百度OCR的免费版。
 
