@@ -4,64 +4,29 @@
 软件安装
 -----------
 
-完整版
-++++++++++++
-
 Windows完整版解压到任意目录后运行ImageTrans.exe即可，Mac完整版打开dmg文件安装ImageTrans到应用目录即可。
 
-跨平台版
-++++++++++++
+Linux请基于模板文件和Windows的完整版使用，依赖JRE、ONNXRuntime和OpenCV等文件。
 
-下载zip压缩包，解压到任意目录，双击ImageTrans.jar或者命令行输入\ ``java -jar ImageTrans.jar``\ 即可运行。
-
-软件依赖JRE 11以上运行环境，请先下载安装。下载地址：\ `Liberica JRE 11.0.19 full version  <https://github.com/bell-sw/Liberica/releases/tag/11.0.19%2B7>`_
-
-软件依赖OpenCV，请根据系统下载运行库文件，解压后放在ImageTrans的目录下。下载地址：\ `GitHub <https://github.com/xulihang/ImageTrans-docs/releases/tag/opencv>`_
 
 OCR与机器翻译的配置
 ++++++++++++++++++++++++
 
-本工具集成了常见的在线OCR和机器翻译服务。一般这些服务均需要设置API密钥才能使用。ImageTrans内置了部分服务的API密钥，可以直接使用：
+软件自带了PaddleOCR（rapid）、mangaOCR、manga image translator 48px CTC OCR、Windows 系统OCR、macOS Vision OCR等本地OCR，也支持使用百度、谷歌、有道、腾讯、阿里等在线OCR服务。在线OCR需要在偏好设置中设置API来使用。
 
-OCR： 百度、OCRSPACE、Azure
+软件支持使用百度、谷歌、有道、腾讯、阿里等在线机器翻译服务。在线机器翻译亦需要在偏好设置里设置API来使用。
 
-机器翻译： 百度、腾讯、云译、mymemory、DeepL免密钥版
+软件默认提供百度翻译和百度OCR的免费版。
 
-另外也支持若干离线OCR和机器翻译。
+软件支持使用大模型进行OCR、翻译、拼写检查等任务。大模型需要在偏好设置里设置API来使用，可以使用ChatGPT、Gemini、DeepSeek、Sakura等服务，亦支持本地部署，支持llama.cpp、Ollama、LM Studio等客户端。
 
-离线OCR:
+OCR和机器翻译支持通过编写插件来支持更多服务。
 
-1. Tesseract
+相关博客：
 
-   需要使用Tesseract进行OCR的话请自行下载安装（`地址 <https://tesseract-ocr.github.io/tessdoc/Downloads.html>`_），并在ImageTrans里指定Tesseract的路径。
-
-   这里再提供一个Windows的安装版本：\ `UB-Mannheim Tesseract5 <https://github.com/UB-Mannheim/tesseract/releases/download/v5.4.0.20240606/tesseract-ocr-w64-setup-5.4.0.20240606.exe>`_。
-
-2. Windows10自带OCR
-
-   Windows10自带OCR功能，但需要先安装所需语言。它和Azure、OCRSPACE的引擎其实是同一个。ImageTrans中这一OCR引擎的名字叫做WinRT，因为它是基于Windows的\ `Windows Runtime API <https://docs.microsoft.com/en-us/uwp/api/windows.media.ocr?view=winrt-20348>`_。
-
-3. mangaOCR
-
-   该OCR能十分准确地识别日漫的文字。安装说明见此：\ `<https://github.com/xulihang/ImageTrans_plugins/tree/master/mangaOCR>`_。
-
-4. macOCR
-
-   macOS版本10.15以上系统自带的OCR。使用说明见此：\ `<https://github.com/xulihang/ImageTrans-docs/issues/341>`_。
-
-5. ABBYY
-
-   支持调用ABBYY FineReader进行OCR，需要在偏好设置里指定软件的FineCMD.exe的路径。
-
-6. PaddleOCR、EasyOCR
-
-   需要自行安装Python和上述软件，并用提供的server脚本运行，例如\ `PaddleOCR的Server <https://github.com/xulihang/ImageTrans_plugins/tree/master/paddleOCR/server>`_。
-
-离线机器翻译：
-
-1. OPUS-CAT。OPUS-CAT是芬兰赫尔辛基自然语言处理小组的离线机器翻译引擎，到\ `官网 <https://helsinki-nlp.github.io/OPUS-CAT/install>`_\ 下载安装后使用\ `OPUS-CAT机器翻译插件 <https://github.com/xulihang/ImageTrans-docs/issues/177#issuecomment-1070305647>`_\ 调用。
-2. eztrans xp。这是一个日韩翻译软件。使用方法见\ `issue29 <https://github.com/xulihang/ImageTrans-docs/issues/29#issuecomment-818754544>`_。
-
+* `如何编写一个ImageTrans的插件 <https://www.basiccat.org/zh/how-to-write-a-plugin-for-imagetrans/>`_
+* `在ImageTrans中用ChatGPT来辅助翻译 <https://www.basiccat.org/zh/ChatGPT-image-translator/>`_
+* `如何在ImageTrans中使用谷歌云服务 <https://www.basiccat.org/zh/how-to-use-google-cloud-in-imagetrans/>`_
 
 验证登录
 ------------
@@ -287,6 +252,7 @@ ImageTrans可以使用BBCode来标记富文本格式，比如下图中运用的�
    "fontfamily", "字体名", "[fontname=Arial]文本[/fontname]"
    "fontsize", "文字大小", "[fontsize=32]文本[/fontsize]"
    "fontcolor", "文字颜色", "[fontcolor=#FF0000]文本[/fontcolor]"
+   "tracking", "字间距", "[tracking=2]文本[/tracking]"
 
 点编辑区域右侧的按钮R可以启用富文本编辑器，便于快速插入对应的BBCode代码。
 
@@ -311,4 +277,5 @@ ImageTrans可以使用BBCode来标记富文本格式，比如下图中运用的�
 5. 字体。
 6. 排序。支持检测分镜和在文字区域上显示序号。
 7. 原图相关。支持调整译文图层透明度和与原文区域进行对齐。
-8. 编辑。支持旋转、翻转等图像编辑操作。
+8. 工作流。快速执行自定义工作流。 
+9. 编辑。支持旋转、翻转等图像编辑操作。
