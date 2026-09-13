@@ -6,6 +6,7 @@ ImageTrans使用手册
    :caption: 目录
 
    intro.rst
+   system_requirements.rst
    gettingstarted.rst
    textarea_detection_and_text_reinjection.rst
    manga_ocr.rst
