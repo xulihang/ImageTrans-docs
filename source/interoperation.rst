@@ -5,11 +5,11 @@
 PSD相关
 ------------------
 
-ImageTrans支持利用脚本调用Photoshop来实现互操作。
+ImageTrans支持创建和读取PSD文件。
 
-说明：如果是Windows系统并安装了完整版Photoshop，ImageTrans提供exe脚本工具，可以自动打开PS。其它情况需要自行打开PS，点击“文件-脚本-浏览”选择脚本进行操作。
+主要是利用脚本调用Windows或者macOS上的Photoshop来实现互操作。Photoshop脚本仓库：`<https://github.com/xulihang/ImageTrans_PhotoshopScripts>`_
 
-Photoshop脚本仓库：`<https://github.com/xulihang/ImageTrans_PhotoshopScripts>`_
+不依赖Photoshop直接生成PSD也是支持的，但效果不如Photoshop生成的PSD好。Linux则只能使用该方式生成PSD。
 
 PSD转JPG
 +++++++++++++
@@ -18,19 +18,16 @@ PSD转JPG
 
 通过菜单-工具-PSD转JPG打开转换工具，调用Photoshop批量进行转换。
 
-非Windows则使用提供的JSX脚本：pdf2jpg.jsx，选择需要进行转换的目录进行转换。
 
 从PSD读取文字区域
 ++++++++++++++++++++++++++
 
 如果处理的是PSD文件，可以从PSD文件读取其中的文字图层的坐标、大小和文本，显示在ImageTrans中，并且回填时会自动替换文本，不用生成覆盖层。点击菜单-编辑-从PSD读取文字图层（若存在）进行操作。
 
-非Windows则使用提供的JSX脚本：readTextLayers.jsx，选择目录进行导出，之后点击菜单-项目-导入用PS脚本导出的文字区域信息进行导入。
-
 读取字体名称
 +++++++++++++++
 
-在字体设置时需要填写PS专用格式的字体名称，可以使用readFont.jsx进行读取。该脚本会读取第一个文本框的字体信息。
+在字体设置时需要填写PS专用格式的字体名称，可以直接在软件中使用按钮或者使用readFont.jsx进行读取。该脚本会读取Photoshop中图片的第一个文本框的字体信息。
 
 生成PSD
 +++++++++++++++
@@ -50,8 +47,6 @@ PSD转JPG
 .. image:: /images/generating_options.jpg
 
 生成完成后会跳出提示窗口，请耐心等待。期间可以切换到PS的窗口查看正在进行的操作，如果PS提出相关操作，需要人工处理。
-
-非Windows请使用脚本：addLayers.jsx。
 
 其它
 ------------------
